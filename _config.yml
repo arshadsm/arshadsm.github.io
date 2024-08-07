@@ -5,6 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal website showcasing my data scientist portfolio, professional experience, and skills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arshadsm.github.io" # the base hostname & protocol for your site
+linkedin: https://www.linkedin.com/in/your-linkedin-username/
+instagram: https://www.instagram.com/your-instagram-username/
 
 # Build settings
 theme: jekyll-theme-minimal
