@@ -1,30 +1,25 @@
 title: Mahammad Arshad Ayub Shaik
 email: mahammadarshadas@gmail.com
+profile_picture: /images/profile-pic.jpg
 description: > # this means to ignore newlines until "baseurl:"
   Personal website showcasing my data scientist portfolio, professional experience, and skills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arshadsm.github.io" # the base hostname & protocol for your site
-
-# Social media links
-linkedin: https://www.linkedin.com/in/your-linkedin-username/
-instagram: https://www.instagram.com/your-instagram-username/
+linkedin: https://www.linkedin.com/in/arshad-ayub01/
+instagram: https://www.instagram.com/arshaditseems/
 
 # Build settings
-theme: zolan
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-paginate
 
 # Custom settings
 projects:
-  - title: Project 1
-    description: Description of project 1.
+  - title: MovieLens Recommendation System
+    description: Recommends a similar movie that might interest the customer based on similarity index of movie user has just watched.
     link: /notebooks/notebook1.html
-  - title: Project 2
-    description: Description of project 2.
+  - title: Identifying images using Computer Vision
+    description: Identification of images using computer vision techniques such as OpenCV, etc.
     link: /notebooks/notebook2.html
 
 skills:
@@ -33,34 +28,3 @@ skills:
   - Machine Learning
   - Data Visualization
   - SQL
-
-# Zolan theme settings
-author:
-  name: "Mahammad Arshad Ayub Shaik"
-  email: "mahammadarshadas@gmail.com"
-  avatar: "/images/profile-pic.jpg"
-  bio: "Personal website showcasing my data scientist portfolio, professional experience, and skills."
-  location: "Location"
-  links:
-    - label: "GitHub"
-      icon: "github"
-      url: "https://github.com/arshadsm"
-    - label: "LinkedIn"
-      icon: "linkedin"
-      url: "https://www.linkedin.com/in/your-linkedin-username/"
-    - label: "Instagram"
-      icon: "instagram"
-      url: "https://www.instagram.com/your-instagram-username/"
-    - label: "Email"
-      icon: "envelope"
-      url: "mailto:mahammadarshadas@gmail.com"
-
-menu:
-  - text: "Home"
-    link: "/"
-  - text: "Projects"
-    link: "/projects"
-  - text: "Blog"
-    link: "/blog"
-  - text: "About"
-    link: "/about"
