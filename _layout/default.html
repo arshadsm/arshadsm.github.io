@@ -19,27 +19,27 @@
       padding: 0 20px;
     }
     header {
+      display: flex;
+      align-items: center;
       background: #333;
       color: #fff;
-      padding-top: 30px;
-      min-height: 70px;
+      padding: 20px;
       border-bottom: #77d7c5 3px solid;
-      text-align: center;
-    }
-    header a {
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 16px;
     }
     header img {
-      margin: 20px 0;
-    }
-    .profile-pic {
+      margin-right: 20px;
+      border-radius: 50%;
       width: 150px;
       height: 150px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+    }
+    header .profile-info {
+      flex: 1;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 10px 0;
     }
     main {
       padding: 20px;
@@ -70,10 +70,12 @@
 <body>
   <div class="container">
     <header>
-      <h1>{{ site.title }}</h1>
-      <img src="{{ site.profile_picture }}" alt="Profile picture" class="profile-pic">
-      <p>{{ site.description }}</p>
-      <a href="{{ site.url }}">View My GitHub Profile</a>
+      <img src="{{ site.profile_picture }}" alt="Profile picture">
+      <div class="profile-info">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <a href="{{ site.url }}">View My GitHub Profile</a>
+      </div>
     </header>
     <main>
       {{ content }}
