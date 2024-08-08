@@ -8,11 +8,15 @@ title: Home
 # Welcome to My Personal Website
 
 ## About Me
-I am Mahammad Arshad Ayub Shaik, a data scientist with a passion for non-fiction books, cycling, and art.
+I am Mahammad Arshad Ayub Shaik, a data scientist with a passion for building tech apps.
 
 ## Professional Experience
-- **Data Scientist at Company XYZ** (2020 - Present)
+- **Data Scientist at Accenture** (2019 - 2023)
   - Developed machine learning models to improve business processes.
+
+## Education
+- **Master of Science in Business Analytics and Information Systems** (2023 - 2024)
+  - University of South Florida
 
 ## Skills
 <ul>
