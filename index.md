@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-<img src="{{ site.profile_picture }}" alt="Profile picture" style="width:150px;height:150px;border-radius:50%;">
-
 # Welcome to My Personal Website
 
 ## About Me
@@ -16,7 +14,7 @@ I am Mahammad Arshad Ayub Shaik, a data scientist with a passion for building te
 
 ## Education
 - **Master of Science in Business Analytics and Information Systems** (2023 - 2024)
-  - University of South Florida
+    University of South Florida
 
 ## Skills
 <ul>
