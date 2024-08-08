@@ -15,7 +15,7 @@ plugins:
 
 # Custom settings
 projects:
-  - title: MovieLens Recommender System
+  - title: MovieLens Recommendation System
     description: Recommends a similar movie that might interest the customer based on similarity index of movie user has just watched.
     link: /notebooks/notebook1.html
   - title: Identifying images using Computer Vision
