@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal website showcasing my data scientist portfolio, professional experience, and skills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arshadsm.github.io" # the base hostname & protocol for your site
-linkedin: https://www.linkedin.com/in/your-linkedin-username/
-instagram: https://www.instagram.com/your-instagram-username/
+linkedin: https://www.linkedin.com/in/arshad-ayub01/
+instagram: https://www.instagram.com/arshaditseems/
 
 # Build settings
 theme: jekyll-theme-minimal
@@ -15,11 +15,11 @@ plugins:
 
 # Custom settings
 projects:
-  - title: Project 1
-    description: Description of project 1.
+  - title: MovieLens Recommender System
+    description: Recommends a similar movie that might interest the customer based on similarity index of movie user has just watched.
     link: /notebooks/notebook1.html
-  - title: Project 2
-    description: Description of project 2.
+  - title: Identifying images using Computer Vision
+    description: Identification of images using computer vision techniques such as OpenCV, etc.
     link: /notebooks/notebook2.html
 
 skills:
