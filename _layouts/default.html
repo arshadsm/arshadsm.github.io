@@ -5,43 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <style>
-    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f8fb; /* Light blueish background */
-      color: #333;
+      background-color: #f4f4f4;
     }
-    a {
-      color: #1e90ff; /* Dodger blue links */
-      text-decoration: none;
+    .container {
+      display: flex;
+      max-width: 100%;  /* Ensure full-width usage */
+      margin: 0;
+      padding: 0;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Navigation Bar */
-    nav {
-      background-color: #4682b4; /* Steel blue background */
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-      font-size: 18px;
-      position: relative;
-      z-index: 1000;
-      box-shadow: 0 4px 2px -2px gray;
-    }
-    nav.sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-
-    /* Sidebar Styles */
     .sidebar {
-      background: #2c3e50; /* Midnight blue background */
+      background: #2c3e50;
       color: #fff;
       padding: 20px;
       width: 300px;
@@ -69,52 +47,24 @@
       color: #bdc3c7;
     }
     .sidebar a {
-      color: #1e90ff; /* Dodger blue links */
+      color: #77d7c5;
+      text-decoration: none;
       display: block;
       margin-top: 10px;
     }
     .sidebar a:hover {
       text-decoration: underline;
     }
-
-    /* Content Styles */
     .content {
-      margin-left: 320px; /* Align content to the right of the sidebar */
+      margin-left: 350px;  /* Ensures the content starts to the right of the sidebar */
       padding: 20px;
       flex-grow: 1;
       background: #fff;
       min-height: 100vh;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Footer Links */
-    .footer-links {
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #444;
-    }
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-    .footer-links ul li {
-      display: inline;
-      margin: 0 10px;
-    }
-    .footer-links ul li a {
-      color: #77d7c5;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <!-- Your navigation bar content -->
-    Home | About | Projects | Contact
-  </nav>
-  
   <div class="sidebar">
     <img src="{{ site.profile_picture }}" alt="Profile picture">
     <h1>{{ site.title }}</h1>
@@ -128,11 +78,8 @@
       </ul>
     </div>
   </div>
-  
   <div class="content">
     {{ content }}
   </div>
-  
-  <script src="/assets/js/scripts.js"></script>
 </body>
 </html>
