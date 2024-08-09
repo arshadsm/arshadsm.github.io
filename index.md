@@ -2,8 +2,6 @@
 layout: default
 title: Home
 ---
-![Profile Picture]({{ site.url }}/images/profile-pic.jpg)
-
 # Welcome to My Personal Website
 
 ## About Me
