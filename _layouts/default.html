@@ -29,7 +29,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       position: fixed;
       height: 100vh;
-      overflow: hidden;
+      overflow: auto;
     }
     .sidebar img {
       margin-bottom: 20px;
@@ -46,6 +46,15 @@
     .sidebar p {
       color: #bdc3c7;
     }
+    .sidebar a {
+      color: #77d7c5;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
     .content {
       margin-left: 30%;
       width: 70%;
@@ -54,24 +63,21 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #2c3e50;
-      color: #fff;
-      clear: both;
+    .footer-links {
       margin-top: 20px;
-      border-radius: 10px;
+      padding-top: 20px;
+      border-top: 1px solid #444;
     }
-    footer ul {
+    .footer-links ul {
       list-style: none;
       padding: 0;
+      text-align: center;
     }
-    footer ul li {
+    .footer-links ul li {
       display: inline;
       margin: 0 10px;
     }
-    footer ul li a {
+    .footer-links ul li a {
       color: #77d7c5;
       text-decoration: none;
     }
@@ -83,18 +89,18 @@
       <img src="{{ site.profile_picture }}" alt="Profile picture">
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
-      <a href="{{ site.url }}" style="color: #77d7c5;">View My GitHub Profile</a>
+      <a href="{{ site.url }}">View My GitHub Profile</a>
+      <div class="footer-links">
+        <ul>
+          <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
+          <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
+          <li><a href="mailto:{{ site.email }}" target="_blank">Email</a></li>
+        </ul>
+      </div>
     </div>
     <div class="content">
       {{ content }}
     </div>
   </div>
-  <footer>
-    <ul>
-      <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
-      <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
-      <li><a href="{{ site.email }}" target="_blank">Email</a></li>
-    </ul>
-  </footer>
 </body>
 </html>
