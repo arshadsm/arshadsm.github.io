@@ -10,37 +10,52 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4; /* Original background color */
+      background-color: #f0f0f0;
     }
     .container {
       max-width: 960px;
       margin: auto;
       overflow: hidden;
-      padding: 0 20px;
-      background-color: #d3d3d3; /* Set container background color to grey */
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .sidebar {
       background: #333;
       color: #fff;
       padding: 20px;
-      border-bottom: #77d7c5 3px solid;
+      border-radius: 10px;
       float: left;
       width: 25%;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .sidebar img {
       margin-bottom: 20px;
       border-radius: 50%;
       width: 150px;
       height: 150px;
-      object-fit: cover; /* Ensures the image is properly cropped to a circle */
+      object-fit: cover;
+      border: 3px solid #77d7c5; /* Border around the profile picture */
     }
     .content {
       float: right;
       width: 70%;
       padding: 20px;
-      background: #fff;
       margin-top: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    a {
+      color: #77d7c5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -49,6 +64,7 @@
       color: #fff;
       clear: both;
       margin-top: 20px;
+      border-radius: 10px;
     }
     footer ul {
       list-style: none;
@@ -79,6 +95,7 @@
       <ul>
         <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
         <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
+        <li><a href="{{ site.email }}" target="_blank">Email</a></li>
       </ul>
     </footer>
   </div>
