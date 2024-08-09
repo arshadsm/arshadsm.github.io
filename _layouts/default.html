@@ -11,53 +11,57 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      display: flex;
     }
     .container {
-      max-width: 960px;
+      max-width: 1200px;
       margin: auto;
+      display: flex;
       padding: 20px;
     }
-    header {
-      display: flex;
-      align-items: center;
-      background: #333;
+    .sidebar {
+      background: #2c3e50;
       color: #fff;
       padding: 20px;
       border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 25%;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      height: 100vh;
+      overflow: hidden;
     }
-    header img {
+    .sidebar img {
+      margin-bottom: 20px;
       border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      margin-right: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
       border: 3px solid #fff;
     }
-    header .profile-info {
-      flex-grow: 1;
-    }
-    header h1 {
+    .sidebar h1 {
       margin: 0;
-      color: #77d7c5;
+      color: #ecf0f1;
     }
-    header p {
-      margin: 5px 0;
-      color: #ccc;
+    .sidebar p {
+      color: #bdc3c7;
     }
-    main {
-      background: #fff;
+    .content {
+      margin-left: 30%;
+      width: 70%;
       padding: 20px;
+      background: #fff;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     footer {
       text-align: center;
       padding: 20px;
-      background: #333;
+      background: #2c3e50;
       color: #fff;
-      border-radius: 10px;
+      clear: both;
       margin-top: 20px;
+      border-radius: 10px;
     }
     footer ul {
       list-style: none;
@@ -71,30 +75,26 @@
       color: #77d7c5;
       text-decoration: none;
     }
-    footer ul li a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <div class="sidebar">
       <img src="{{ site.profile_picture }}" alt="Profile picture">
-      <div class="profile-info">
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
-        <a href="{{ site.url }}" style="color: #77d7c5;">View My GitHub Profile</a>
-      </div>
-    </header>
-    <main>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+      <a href="{{ site.url }}" style="color: #77d7c5;">View My GitHub Profile</a>
+    </div>
+    <div class="content">
       {{ content }}
-    </main>
-    <footer>
-      <ul>
-        <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
-        <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
-      </ul>
-    </footer>
+    </div>
   </div>
+  <footer>
+    <ul>
+      <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
+      <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
+      <li><a href="{{ site.email }}" target="_blank">Email</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
