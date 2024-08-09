@@ -18,27 +18,25 @@
       overflow: hidden;
       padding: 0 20px;
     }
-    header {
+    .sidebar {
       background: #333;
       color: #fff;
       padding: 20px;
       border-bottom: #77d7c5 3px solid;
+      float: left;
+      width: 25%;
+      text-align: center;
     }
-    header .profile-info {
-      display: flex;
-      align-items: center;
-    }
-    header img {
-      margin-right: 20px;
+    .sidebar img {
+      margin-bottom: 20px;
       border-radius: 50%;
       width: 150px;
       height: 150px;
+      object-fit: cover; /* Ensures the image is properly cropped to a circle */
     }
-    header h1, header p, header a {
-      margin: 0;
-      padding: 5px 0;
-    }
-    main {
+    .content {
+      float: right;
+      width: 70%;
       padding: 20px;
       background: #fff;
       margin-top: 20px;
@@ -48,6 +46,7 @@
       padding: 20px;
       background: #333;
       color: #fff;
+      clear: both;
       margin-top: 20px;
     }
     footer ul {
@@ -66,19 +65,15 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="profile-info">
-        <img src="{{ site.profile_picture }}" alt="Profile picture">
-        <div>
-          <h1>{{ site.title }}</h1>
-          <p>{{ site.description }}</p>
-          <a href="{{ site.url }}">View My GitHub Profile</a>
-        </div>
-      </div>
-    </header>
-    <main>
+    <div class="sidebar">
+      <img src="{{ site.profile_picture }}" alt="Profile picture">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+      <a href="{{ site.url }}">View My GitHub Profile</a>
+    </div>
+    <div class="content">
       {{ content }}
-    </main>
+    </div>
     <footer>
       <ul>
         <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
