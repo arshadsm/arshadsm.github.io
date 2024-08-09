@@ -9,14 +9,12 @@ title: Home
 I'm Mahammad Arshad Ayub Shaik, a data scientist on a mission to craft cutting-edge tech apps that transform ideas into reality.
 
 ## Professional Experience
-- **Data Scientist**
-  - **Accenture (2019 - 2023)**
+- **Data Scientist** | *Accenture (2019 - 2023)*
   - Designed and developed Tableau dashboards to track key metrics and customer behavior. Employed R for statistical analysis, increasing click-through rates by 20%. Analyzed large datasets with Spark and Hive, improving data efficiency by 25%. Built predictive models using machine learning, achieving 95% accuracy.
 
 
 ## Education
-- **Master of Science in Business Analytics and Information Systems**
-    - **University of South Florida (2023 - 2024)**
+- **Master of Science in Business Analytics and Information Systems** | *University of South Florida (2023 - 2024)*
 
 ## Skills
 <ul>
