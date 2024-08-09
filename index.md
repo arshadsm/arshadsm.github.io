@@ -4,9 +4,6 @@ title: Home
 ---
 # Welcome to My Personal Website
 
-## About Me
-I'm Mahammad Arshad Ayub Shaik, a data scientist on a mission to craft cutting-edge tech apps that transform ideas into reality.
-
 ## Professional Experience
 <p><strong>Data Scientist</strong> | <em>Accenture (2019 - 2023)</em></p>
 <ul>
@@ -41,12 +38,5 @@ I'm Mahammad Arshad Ayub Shaik, a data scientist on a mission to craft cutting-e
     <a href="{{ project.link }}">View Project</a>
   </li>
 {% endfor %}
-</ul>
-
-## Connect with Me
-<ul>
-  <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
-  <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
-  <li><a href="mailto:mahammadarshadas@gmail.com">Email</a></li>
 </ul>
 
