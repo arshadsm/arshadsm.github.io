@@ -16,7 +16,7 @@ plugins:
 projects:
   - title: MovieLens Recommendation System
     description: "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
-    link: /notebooks/MovieLens_Recommendation_System.ipynb
+    link: /notebooks/MovieLens_Recommendation_System.html
 
 skills:
   - "Databases & Languages: **Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata**"
