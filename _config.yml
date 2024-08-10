@@ -8,7 +8,7 @@ linkedin: https://www.linkedin.com/in/arshad-ayub01/
 instagram: https://www.instagram.com/arshaditseems/
 
 # Remote theme settings
-remote_theme: "mmistakes/minimal-mistakes@latest"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-remote-theme # add this if you don't have it
 
