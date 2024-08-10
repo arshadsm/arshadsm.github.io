@@ -7,10 +7,17 @@ url: "https://arshadsm.github.io" # the base hostname & protocol for your site
 linkedin: https://www.linkedin.com/in/arshad-ayub01/
 instagram: https://www.instagram.com/arshaditseems/
 
+# Remote theme settings
+remote_theme: "mmistakes/minimal-mistakes@latest"
+plugins:
+  - jekyll-remote-theme # add this if you don't have it
+
 # Build settings
-theme: jekyll-theme-minimal
+markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Custom settings
 projects:
