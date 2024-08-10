@@ -75,6 +75,17 @@
       width: 80%;
       max-width: 800px;
     }
+   .project-link {
+      color: #77d7c5;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px dashed #77d7c5; /* Adds a dashed underline */
+    }
+
+    .project-link:hover {
+      color: #1abc9c;
+      border-bottom: 1px solid #1abc9c; /* Changes underline on hover */
+    }
     .footer-links {
       margin-top: 20px;
       padding-top: 20px;
@@ -136,7 +147,7 @@
     <p><strong>Cloud Computing and Version Control Systems:</strong> MS Azure, AWS - RedShift, EC2, EMR, S3, Git</p>
     <p><strong>Soft Skills:</strong> Leadership skills, Interpersonal, Oral and Written communication</p>
     <h2>Projects</h2>
-    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="/notebooks/MovieLens_Recommendation_System.html">View Project</a></p>
+    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="/notebooks/MovieLens_Recommendation_System.html" class="project-link">Explore Project</a></p>
     <div class="footer-links">
       <ul>
         <li><a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
