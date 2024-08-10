@@ -19,3 +19,16 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('sticky');
     }
 });
+
+// Toggle Sidebar for Mobile View
+document.querySelector('.sidebar').insertAdjacentHTML('afterbegin', '<button class="toggle-btn">☰</button>');
+document.querySelector('.toggle-btn').addEventListener('click', function() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('collapsed');
+});
+
+@media screen and (max-width: 768px) {
+  .collapsed {
+    display: none;
+  }
+}
