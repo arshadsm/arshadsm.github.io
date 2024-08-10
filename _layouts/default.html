@@ -4,71 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: 'Source Sans Pro', sans-serif;
-      line-height: 1.6;
+      line-height: 1.8;
       margin: 0;
       padding: 0;
-      background: url('/images/background.jpg') no-repeat center center fixed;
+      background: url('path-to-your-blue-sky-image.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
     .dark-background {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
       border-radius: 10px;
+      margin: 20px 0;
+      width: 90%;
+      max-width: 1000px;
     }
-    .sidebar {
-      background: rgba(44, 62, 80, 0.8);
-      color: #fff;
-      padding: 20px;
-      width: 100%;
+    h1, h2, h3, h4, h5, h6 {
       text-align: center;
-      border-bottom: 1px solid #ccc;
-      position: relative;
-      margin-bottom: 20px;
+      margin: 10px 0;
+      font-weight: 700;
     }
-    .sidebar img {
-      margin-bottom: 20px;
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 3px solid #fff;
+    p {
+      text-align: center;
+      margin: 10px 0;
     }
-    .sidebar h1 {
-      margin: 0;
-      color: #ecf0f1;
-    }
-    .sidebar p {
-      color: #bdc3c7;
-    }
-    .sidebar a {
-      color: #1abc9c;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .sidebar a:hover {
-      background-color: rgba(26, 188, 156, 0.2);
-      text-decoration: none;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
     }
     .content {
-      width: 80%;
       text-align: center;
       background: rgba(0, 0, 0, 0.7);
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+      width: 80%;
+      max-width: 800px;
     }
     .footer-links {
       margin-top: 20px;
@@ -88,25 +69,46 @@
     .footer-links ul li a {
       color: #77d7c5;
       text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    .footer-links ul li a:hover {
+      color: #1abc9c;
+    }
+    .footer-links ul li a i {
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="sidebar dark-background">
-    <img src="{{ site.profile_picture }}" alt="Profile picture">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <a href="{{ site.url }}">View My GitHub Profile</a>
-    <div class="footer-links">
-      <ul>
-        <li><a href="{{ site.linkedin }}" target="_blank">LinkedIn</a></li>
-        <li><a href="{{ site.instagram }}" target="_blank">Instagram</a></li>
-        <li><a href="mailto:{{ site.email }}" target="_blank">Email</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="content dark-background">
-    {{ content }}
+    <h1>Welcome to My Personal Website</h1>
+    <h2>Professional Experience</h2>
+    <p>Data Scientist | Accenture (2019 - 2023)</p>
+    <ul>
+      <li>Designed and developed Tableau dashboards to track key metrics and customer behavior. Employed R for statistical analysis, increasing click-through rates by 20%.</li>
+      <li>Analyzed large datasets with Spark and Hive, improving data efficiency by 25%.</li>
+      <li>Built predictive models using machine learning, achieving 95% accuracy.</li>
+    </ul>
+    <p>Jr. Data Scientist | BSNL (May 2018 - Apr 2019)</p>
+    <ul>
+      <li>Conducted data analysis using Hive and SQL, compiling and retrieving data from Hadoop clusters and RedShift.</li>
+      <li>Assisted in building data pipelines from various sources (AWS S3, RDS, Web APIs, MongoDB) into Hadoop HDFS.</li>
+      <li>Developed Python scripts and created visualizations with Tableau and PowerBI, enhancing data preprocessing by 30%.</li>
+    </ul>
+    <h2>Education</h2>
+    <p>Master of Science in Business Analytics and Information Systems | University of South Florida (2023 - 2024)</p>
+    <h2>Skills</h2>
+    <p><strong>Databases & Languages:</strong> Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata</p>
+    <p><strong>Statistical Methods:</strong> ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals</p>
+    <p><strong>Machine Learning:</strong> Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP)</p>
+    <p><strong>Hadoop Ecosystem:</strong> Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume</p>
+    <p><strong>Data Visualization:</strong> Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2</p>
+    <p><strong>Operating Systems:</strong> Windows, UNIX/UNIX Shell Scripting, Linux</p>
+    <p><strong>Cloud Computing and Version Control Systems:</strong> MS Azure, AWS - RedShift, EC2, EMR, S3, Git</p>
+    <p><strong>Soft Skills:</strong> Leadership skills, Interpersonal, Oral and Written communication</p>
+    <h2>Projects</h2>
+    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="link-to-your-project">View Project</a></p>
   </div>
 </body>
 </html>
