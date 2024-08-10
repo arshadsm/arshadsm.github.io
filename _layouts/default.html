@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
+  <title>My Personal Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
@@ -11,7 +11,7 @@
       line-height: 1.8;
       margin: 0;
       padding: 0;
-      background: url('path-to-your-blue-sky-image.jpg') no-repeat center center fixed;
+      background: url('/images/background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       display: flex;
@@ -78,11 +78,25 @@
     .footer-links ul li a i {
       margin-right: 5px;
     }
+    header {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  <div class="content dark-background">
+  <header>
     <h1>Welcome to My Personal Website</h1>
+  </header>
+  <div class="content dark-background">
     <h2>Professional Experience</h2>
     <p>Data Scientist | Accenture (2019 - 2023)</p>
     <ul>
@@ -108,7 +122,14 @@
     <p><strong>Cloud Computing and Version Control Systems:</strong> MS Azure, AWS - RedShift, EC2, EMR, S3, Git</p>
     <p><strong>Soft Skills:</strong> Leadership skills, Interpersonal, Oral and Written communication</p>
     <h2>Projects</h2>
-    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="link-to-your-project">View Project</a></p>
+    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="/notebooks/MovieLens_Recommendation_System.html">View Project</a></p>
+    <div class="footer-links">
+      <ul>
+        <li><a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope"></i>Email</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
