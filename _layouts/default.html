@@ -6,25 +6,33 @@
   <title>{{ site.title }}</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      display: block;
+      background: url('/images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .dark-background {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
     }
     .sidebar {
-      background: #2c3e50;
+      background: rgba(44, 62, 80, 0.8);
       color: #fff;
       padding: 20px;
-      width: 300px;
+      width: 100%;
       text-align: center;
-      height: 100vh;
-      overflow: auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      border-right: 1px solid #ccc; /* Optional: Add a border to the right of the sidebar */
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      margin-bottom: 20px;
     }
     .sidebar img {
       margin-bottom: 20px;
@@ -44,9 +52,9 @@
     .sidebar a {
       color: #1abc9c;
       text-decoration: none;
-      display: block;
+      display: inline-block;
       margin-top: 10px;
-      padding: 10px 0;
+      padding: 10px 20px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
@@ -54,26 +62,19 @@
       background-color: rgba(26, 188, 156, 0.2);
       text-decoration: none;
     }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
     .content {
-      margin-left: 350px;
+      width: 80%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
       padding: 40px;
-      background: #fff;
-      flex: 1;
-      min-height: 100vh;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    @media screen and (max-width: 768px) {
-      .content {
-        margin-left: 0;
-      }
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
     .footer-links {
       margin-top: 20px;
       padding-top: 20px;
       border-top: 1px solid #444;
+      text-align: center;
     }
     .footer-links ul {
       list-style: none;
@@ -91,7 +92,7 @@
   </style>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="sidebar dark-background">
     <img src="{{ site.profile_picture }}" alt="Profile picture">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
@@ -104,7 +105,7 @@
       </ul>
     </div>
   </div>
-  <div class="content">
+  <div class="content dark-background">
     {{ content }}
   </div>
 </body>
