@@ -107,28 +107,56 @@
       max-width: 300px;
       border-radius: 10px;
     }
-    .portfolio {
+    .portfolio-container {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: space-between;
       margin-top: 40px;
     }
     .portfolio-item {
-      flex: 1 1 calc(33.333% - 20px);
-      margin: 10px;
+      display: flex;
+      flex: 1 1 48%;
+      margin: 10px 0;
       background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
+      padding: 20px;
     }
-    .portfolio-item img {
-      width: 100%;
-      max-width: 300px;  /* Limits the maximum width of the image */
-      height: auto;  /* Keeps the aspect ratio intact */
-      display: block;
-      margin: 0 auto;  /* Centers the image horizontally */
-    }
+    .portfolio-image {
+  		flex: 1;
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		}
+		.portfolio-image img {
+  		width: 100%;
+  		max-width: 150px; /* Adjust as needed for image size */
+  		height: auto;
+		}
 
+		.portfolio-text {
+  		flex: 1;
+  		padding-left: 20px;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: center;
+		}
+
+		.portfolio-text p {
+  		margin: 5px 0;
+		}
+
+		.portfolio-text .project-link {
+  		margin-top: 10px;
+  		color: #00796b;
+  		text-decoration: none;
+  		font-weight: bold;
+		}
+
+		.portfolio-text .project-link:hover {
+  		text-decoration: underline;
+		}
     }
     .footer {
       background-color: #004d40;
@@ -188,14 +216,22 @@
   <section class="portfolio" id="portfolio">
   <div class="portfolio-container">
     <div class="portfolio-item">
-      <img src="/images/project1.png" alt="Project 1">
-      <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched.</p>
-      <p><a href="/notebooks/MovieLens_Recommendation_System.html" class="project-link">Explore Project</a></p>
+      <div class="portfolio-image">
+        <img src="/images/project1.png" alt="Project 1">
+      </div>
+      <div class="portfolio-text">
+        <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched.</p>
+        <p><a href="/notebooks/MovieLens_Recommendation_System.html" class="project-link">Explore Project</a></p>
+      </div>
     </div>
     <div class="portfolio-item">
-      <img src="/images/project2.png" alt="Project 2">
-      <p><strong>Relation Extraction System:</strong> Extracts the relationship between entities by leveraging Sequential Transfer Learning for better performance.</p>
-      <!--<p><a href="/notebooks/Project2.html" class="project-link">Explore Project</a></p>-->
+      <div class="portfolio-image">
+        <img src="/images/project2.png" alt="Project 2">
+      </div>
+      <div class="portfolio-text">
+        <p><strong>Relation Extraction System:</strong> Extracts the relationship between entities by leveraging Sequential Transfer Learning for better performance.</p>
+        <!--<p><a href="/notebooks/Relation_Extraction_System.html" class="project-link">Explore Project</a></p> -->
+      </div>
     </div>
   </div>
   </section>
