@@ -14,6 +14,30 @@
       color: #333;
       background-color: #f4f9f9;
     }
+    nav {
+      background-color: #004d40;
+      padding: 10px 0;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #82e9de;
+    }
     header {
       text-align: center;
       padding: 100px 0;
@@ -111,14 +135,23 @@
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header id="home">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </header>
   <section class="intro">
     <p>"I want to help others make the right decisions, data-driven decisions."</p>
   </section>
-  <section class="services">
+  <section class="services" id="services">
     <div class="service-item">
       <h3>Data Analysis</h3>
       <p>Specializing in data analysis to provide clear, actionable insights.</p>
@@ -132,14 +165,14 @@
       <p>Creating interactive dashboards to visualize complex data.</p>
     </div>
   </section>
-  <section class="about-me">
+  <section class="about-me" id="about-me">
     <div class="about-me-text">
       <h2>About Me</h2>
       <p>Hello! I'm Arshad, a data scientist passionate about turning raw data into meaningful insights. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards.</p>
     </div>
     <img src="{{ site.profile_picture }}" alt="Arshad's Picture">
   </section>
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="portfolio-item">
       <img src="/images/project1.png" alt="Project 1">
     </div>
@@ -150,7 +183,7 @@
       <img src="/images/project3.png" alt="Project 3">
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
     <p>
       <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
