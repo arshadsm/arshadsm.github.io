@@ -8,86 +8,105 @@
   <style>
     body {
       font-family: 'Source Sans Pro', sans-serif;
-      line-height: 1.8;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f0f4f8, #dfe9f3);
       color: #333;
+      background-color: #f4f9f9;
     }
     header {
-      width: 100%;
-      background-color: #eef2f7;
-      padding: 40px 0;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      padding: 100px 0;
+      background-color: #e0f7fa;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
       color: #333;
     }
     header p {
-      color: #666;
-      margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 1.5em;
+      color: #777;
     }
-    .content {
-      width: 80%;
+    section {
+      padding: 60px 0;
       max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      margin: 0 auto;
     }
-    h2 {
-      text-align: left;
-      color: #333;
-      border-bottom: 2px solid #1abc9c;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    p {
-      text-align: left;
+    .intro {
+      text-align: center;
+      font-size: 1.5em;
       color: #555;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      text-align: left;
-    }
-    .project-link {
-      color: #1abc9c;
-      text-decoration: none;
-      font-weight: bold;
-      border-bottom: 1px dashed #1abc9c;
-    }
-    .project-link:hover {
-      color: #16a085;
-      border-bottom: 1px solid #16a085;
-    }
-    .footer-links {
+    .services {
+      display: flex;
+      justify-content: space-around;
       margin-top: 40px;
+    }
+    .service-item {
       text-align: center;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
+      flex: 1;
+      margin: 0 20px;
     }
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
+    .service-item h3 {
+      margin-bottom: 20px;
+      color: #00796b;
     }
-    .footer-links ul li {
-      display: inline;
-      margin: 0 10px;
+    .service-item p {
+      color: #555;
     }
-    .footer-links ul li a {
-      color: #1abc9c;
+    .about-me {
+      display: flex;
+      margin-top: 60px;
+      align-items: center;
+    }
+    .about-me-text {
+      flex: 2;
+      padding-right: 20px;
+    }
+    .about-me-text h2 {
+      color: #00796b;
+    }
+    .about-me-text p {
+      color: #555;
+    }
+    .about-me img {
+      flex: 1;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .portfolio {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .portfolio-item {
+      flex: 1 1 calc(33.333% - 20px);
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 60px;
+    }
+    .footer a {
+      color: #4db6ac;
       text-decoration: none;
-      font-size: 1.2em;
-      transition: color 0.3s;
+      margin: 0 15px;
     }
-    .footer-links ul li a:hover {
-      color: #16a085;
+    .footer a:hover {
+      color: #82e9de;
     }
   </style>
 </head>
@@ -96,40 +115,48 @@
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </header>
-  <div class="content">
-    <h2>Professional Experience</h2>
-    <p>Data Scientist | Accenture (May 2019 - Jul 2023)</p>
-    <ul>
-      <li>Designed and developed Tableau dashboards to track key metrics and customer behavior. Employed R for statistical analysis, increasing click-through rates by 20%.</li>
-      <li>Analyzed large datasets with Spark and Hive, improving data efficiency by 25%.</li>
-      <li>Built predictive models using machine learning, achieving 95% accuracy.</li>
-    </ul>
-    <p>Junior Data Analyst | BSNL (May 2018 - Apr 2019)</p>
-    <ul>
-      <li>Conducted data analysis using Hive and SQL, compiling and retrieving data from Hadoop clusters and RedShift.</li>
-      <li>Assisted in building data pipelines from various sources (AWS S3, RDS, Web APIs, MongoDB) into Hadoop HDFS.</li>
-      <li>Developed Python scripts and created visualizations with Tableau and PowerBI, enhancing data preprocessing by 30%.</li>
-    </ul>
-    <h2>Education</h2>
-    <p>Master of Science in Business Analytics and Information Systems | University of South Florida (Aug 2023 - Dec 2024)</p>
-    <h2>Skills</h2>
-    <p><strong>Databases & Languages:</strong> Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata</p>
-    <p><strong>Statistical Methods:</strong> ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals</p>
-    <p><strong>Machine Learning:</strong> Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP)</p>
-    <p><strong>Hadoop Ecosystem:</strong> Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume</p>
-    <p><strong>Data Visualization:</strong> Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2</p>
-    <p><strong>Operating Systems:</strong> Windows, UNIX/UNIX Shell Scripting, Linux</p>
-    <p><strong>Cloud Computing and Version Control Systems:</strong> MS Azure, AWS - RedShift, EC2, EMR, S3, Git</p>
-    <p><strong>Soft Skills:</strong> Leadership skills, Interpersonal, Oral and Written communication</p>
-    <h2>Projects</h2>
-    <p><strong>MovieLens Recommendation System:</strong> Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched. <a href="/notebooks/MovieLens_Recommendation_System.html" class="project-link">Explore Project</a></p>
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-      <li><a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-      <li><a href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope"></i>Email</a></li>
-    </ul>
-  </div>
+  <section class="intro">
+    <p>"I want to help others make the right decisions, data-driven decisions."</p>
+  </section>
+  <section class="services">
+    <div class="service-item">
+      <h3>Data Analysis</h3>
+      <p>Specializing in data analysis to provide clear, actionable insights.</p>
+    </div>
+    <div class="service-item">
+      <h3>Machine Learning</h3>
+      <p>Building predictive models using state-of-the-art techniques.</p>
+    </div>
+    <div class="service-item">
+      <h3>Dashboards</h3>
+      <p>Creating interactive dashboards to visualize complex data.</p>
+    </div>
+  </section>
+  <section class="about-me">
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>Hello! I'm Arshad, a data scientist passionate about turning raw data into meaningful insights. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards.</p>
+    </div>
+    <img src="{{ site.profile_picture }}" alt="Arshad's Picture">
+  </section>
+  <section class="portfolio">
+    <div class="portfolio-item">
+      <img src="/images/project1.png" alt="Project 1">
+    </div>
+    <div class="portfolio-item">
+      <img src="/images/project2.png" alt="Project 2">
+    </div>
+    <div class="portfolio-item">
+      <img src="/images/project3.png" alt="Project 3">
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
+    <p>
+      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+  </footer>
 </body>
 </html>
