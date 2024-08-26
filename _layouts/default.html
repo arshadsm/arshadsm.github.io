@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -124,19 +125,19 @@
       padding: 20px;
     }
     .portfolio-image {
-  		flex: 1;
-  		display: flex;
-  		justify-content: center;
-  		align-items: center;
-		}
-		.portfolio-image img {
-  		width: 100%;
-  		max-width: 150px; /* Adjust as needed for image size */
-  		height: auto;
-		}
-
-		.portfolio-text {
-  		flex: 1;
+      flex: 1;
+      display: flex;
+  	  justify-content: center;
+  	  align-items: center;
+    }
+     .portfolio-image img {
+  	  width: 100%;
+      height: 150px; /* Set this to your desired height */
+      object-fit: cover; /* Crops the image */
+      border-radius: 5px;
+    }
+     .portfolio-text {
+  	  flex: 1;
   		padding-left: 20px;
   		display: flex;
   		flex-direction: column;
