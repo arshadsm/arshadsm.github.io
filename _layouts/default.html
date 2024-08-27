@@ -6,171 +6,10 @@
   <title>{{ site.title }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #FEFAE0; /* Light background color */
-    }
-    nav {
-      background-color: #D4A373; /* Darker color for the navigation bar */
-      padding: 20px 0;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #333;
-      text-decoration: none;
-      font-size: 1.2em;
-      padding: 10px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav ul li a:hover {
-      background-color: #CCD5AE; /* Hover effect color */
-      color: #fff;
-    }
-    header {
-      text-align: center;
-      padding: 120px 0;
-      background-color: #E9EDC9; /* Slightly darker background for header */
-      margin-top: 80px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      color: #333;
-    }
-    header p {
-      font-size: 1.5em;
-      color: #777;
-    }
-    section {
-      padding: 60px 0;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .intro {
-      text-align: center;
-      font-size: 1.5em;
-      color: #555;
-    }
-    .services {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 40px;
-    }
-    .service-item {
-      text-align: center;
-      flex: 1;
-      margin: 0 20px;
-    }
-    .service-item h3 {
-      margin-bottom: 20px;
-      color: #D4A373; /* Use the darker color for headings */
-    }
-    .service-item p {
-      color: #555;
-    }
-    .about-me {
-      display: flex;
-      margin-top: 60px;
-      align-items: center;
-    }
-    .about-me-text {
-      flex: 2;
-      padding-right: 20px;
-    }
-    .about-me-text h2 {
-      color: #D4A373;
-    }
-    .about-me-text p {
-      color: #555;
-    }
-    .about-me img {
-      flex: 1;
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .portfolio-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 40px;
-    }
-    .portfolio-item {
-      display: flex;
-      flex: 1 1 48%;
-      margin: 10px 0;
-      background-color: #FAEDCD; /* Light background for portfolio items */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      overflow: hidden;
-      padding: 20px;
-    }
-    .portfolio-image {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .portfolio-image img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-    .portfolio-text {
-      flex: 1;
-      padding-left: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .portfolio-text p {
-      margin: 5px 0;
-    }
-    .portfolio-text .project-link {
-      margin-top: 10px;
-      color: #D4A373;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .portfolio-text .project-link:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      background-color: #CCD5AE; /* Lighter color for footer */
-      color: #333;
-      text-align: center;
-      padding: 40px 0;
-      margin-top: 60px;
-    }
-    .footer a {
-      color: #D4A373;
-      text-decoration: none;
-      margin: 0 15px;
-    }
-    .footer a:hover {
-      color: #FAEDCD;
-    }
-  </style>
+
+  <!-- Link to the external styles.css file -->
+  <link rel="stylesheet" href="/styles/styles.css">
+
 </head>
 <body>
   <nav>
@@ -190,21 +29,21 @@
     <p>"Raw data isn’t exciting — but I love turning it into something that is!"</p>
   </section>
   <section class="services fade-in" id="services">
-  <div class="service-item">
-    <img src="/images/data_analysis.png" alt="Data Analysis Icon" style="max-width: 100px; display: block; margin: 0 auto;">
-    <h3>Data Analysis</h3>
-    <p>Specializing in data analysis to provide clear, actionable insights.</p>
-  </div>
-  <div class="service-item">
-    <img src="/images/machine_learning.png" alt="Machine Learning Icon" style="max-width: 100px; display: block; margin: 0 auto;">
-    <h3>Machine Learning</h3>
-    <p>Building predictive models using state-of-the-art techniques.</p>
-  </div>
-  <div class="service-item">
-    <img src="/images/dashboards.png" alt="Dashboards Icon" style="max-width: 100px; display: block; margin: 0 auto;">
-    <h3>Dashboards</h3>
-    <p>Creating interactive dashboards to visualize complex data.</p>
-  </div>
+    <div class="service-item">
+      <img src="/images/data_analysis.png" alt="Data Analysis Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <h3>Data Analysis</h3>
+      <p>Specializing in data analysis to provide clear, actionable insights.</p>
+    </div>
+    <div class="service-item">
+      <img src="/images/machine_learning.png" alt="Machine Learning Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <h3>Machine Learning</h3>
+      <p>Building predictive models using state-of-the-art techniques.</p>
+    </div>
+    <div class="service-item">
+      <img src="/images/dashboards.png" alt="Dashboards Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <h3>Dashboards</h3>
+      <p>Creating interactive dashboards to visualize complex data.</p>
+    </div>
   </section>
   <section class="about-me fade-in" id="about-me">
     <div class="about-me-text" style="padding-right: 40px; background-color: #FAEDCD; padding: 20px; border-radius: 10px;">
@@ -247,5 +86,9 @@
       <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
     </p>
   </footer>
+
+  <!-- Link to the external scripts.js file -->
+  <script src="/js/scripts.js"></script>
+
 </body>
 </html>
