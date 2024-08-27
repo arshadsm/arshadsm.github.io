@@ -145,39 +145,42 @@ body {
 
 /* Slider */
 .slider {
-  position: relative;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-  min-width: 100%;
-  box-sizing: border-box;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .slide img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 10px;
 }
 
 .caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
+
 
 /* Navigation Buttons for Slider */
 .prev, .next {
