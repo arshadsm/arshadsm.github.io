@@ -5,7 +5,6 @@ body {
   background-color: #212F45; /* Background color using the darkest shade */
 }
 
-/* Headers */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   color: #E5E5E5; /* Consistent light text color */
@@ -59,14 +58,40 @@ section {
   margin: 0 auto;
 }
 
+/* Services and About Me Sections */
+.services, .about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.service-item, .about-me-text {
+  flex: 1 1 30%;
+  margin: 10px;
+  text-align: center;
+  background-color: #1B3A4B; /* Background for services and about me */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.service-item img, .about-me img {
+  max-width: 80px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
 /* Portfolio Items */
 .portfolio-item {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #312244; /* Background color for portfolio items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .portfolio-item:hover {
@@ -76,9 +101,94 @@ section {
 
 .portfolio-image img {
   width: 100%;
-  height: 300px;
+  height: 200px; /* Set a fixed height */
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Prevent content from being hidden behind the fixed navbar */
+header, section {
+  margin-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Fade-In Effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons for Slider */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Footer */
