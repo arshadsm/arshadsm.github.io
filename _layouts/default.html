@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -27,20 +29,23 @@
     <p>"Raw data isn’t exciting — but I love turning it into something that is!"</p>
   </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <div class="service-item">
-      <h3>Data Analysis</h3>
-      <p>Specializing in data analysis to provide clear, actionable insights.</p>
-    </div>
-    <div class="service-item">
-      <h3>Machine Learning</h3>
-      <p>Building predictive models using state-of-the-art techniques.</p>
-    </div>
-    <div class="service-item">
-      <h3>Dashboards</h3>
-      <p>Creating interactive dashboards to visualize complex data.</p>
-    </div>
+  <section class="services fade-in" id="services">
+  <h2>Services</h2>
+  <div class="service-item">
+    <i class="fas fa-chart-line service-icon"></i>
+    <h3>Data Analysis</h3>
+    <p>Specializing in data analysis to provide clear, actionable insights.</p>
+  </div>
+  <div class="service-item">
+    <i class="fas fa-robot service-icon"></i>
+    <h3>Machine Learning</h3>
+    <p>Building predictive models using state-of-the-art techniques.</p>
+  </div>
+  <div class="service-item">
+    <i class="fas fa-chart-pie service-icon"></i>
+    <h3>Dashboards</h3>
+    <p>Creating interactive dashboards to visualize complex data.</p>
+  </div>
   </section>
 
   <section id="about-me" class="about-me">
@@ -73,15 +78,16 @@
     </div>
   </section>
 
-  <footer class="footer" id="contact">
-    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
-    <p>
-      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
-    </p>
+  <footer class="footer fade-in" id="contact">
+  <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
+  <p>
+    <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+  </p>
   </footer>
 
-  <script src="js/scripts.js"></script>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>
