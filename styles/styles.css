@@ -2,15 +2,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #F0F4F8;
+    background-color: #90E0EF; /* Light background from the new palette */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #065A60;
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script for headings */
+    color: #03045E; /* Dark text color from the new palette */
     margin-bottom: 10px;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background: #065A60;
+    background: #0077B6; /* Updated to a blue tone from the new palette */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E5E5E5;
+    color: #CAF0F8; /* Light text color for contrast */
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #065A60;
+    background-color: #023E8A; /* Darker shade on hover */
     color: #FFFFFF;
 }
 
@@ -61,8 +61,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #D6E2E9; /* Updated for better readability */
-    color: #D4A373; /* Use a contrasting color for text */
+    background-color: #CAF0F8; /* Light blue background */
+    color: #0077B6; /* Contrasting color for text */
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ header h1 {
 
 header p {
     font-size: 1.5em;
-    color: #333; /* Adjusted for better readability */
+    color: #03045E; /* Adjusted for better readability */
 }
 
 /* About Me Section */
@@ -82,15 +82,15 @@ header p {
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #DBE7E4; /* Updated background for better contrast */
+    background-color: #ADE8F4; /* Light blue background */
 }
 
 .about-me-text {
     flex: 1;
     padding: 20px;
-    background-color: #FFF1E6; /* Soft background color */
+    background-color: #90E0EF; /* Soft background color */
     border-radius: 10px;
-    color: #333; /* Darker text for better readability */
+    color: #0077B6; /* Darker text for better readability */
 }
 
 .about-me img {
@@ -102,7 +102,7 @@ header p {
 /* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #F0EFEB; /* Adjusting the background color to match the palette */
+    background-color: #CAF0F8; /* Adjusting the background color to match the palette */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -132,19 +132,19 @@ header p {
 .caption {
     padding: 20px;
     text-align: center;
-    color: #333;
+    color: #0077B6;
 }
 
 /* Footer */
 .footer {
-    background-color: #99C1DE; /* Updated footer color for contrast */
+    background-color: #00B4D8; /* Updated footer color for contrast */
     padding: 40px 0;
     text-align: center;
     color: #333;
 }
 
 .footer a {
-    color: #333;
+    color: #03045E;
     text-decoration: none;
 }
 
@@ -157,13 +157,13 @@ header p {
     display: flex;
     justify-content: space-around;
     padding: 50px 0;
-    background-color: #FFF1E6; /* Updated background for better contrast */
+    background-color: #90E0EF; /* Updated background for better contrast */
 }
 
 .service-item {
     text-align: center;
-    background-color: #C5DEDD;
-    color: #333;
+    background-color: #CAF0F8;
+    color: #0077B6;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -176,26 +176,26 @@ header p {
 
 .service-icon {
     font-size: 2.5em;
-    color: #333;
+    color: #03045E;
     margin-bottom: 15px;
 }
 
 /* Intro Section */
 .intro {
     padding: 50px 20px;
-    background-color: #F0EFEB; /* A soft background color */
+    background-color: #ADE8F4; /* A soft background color */
     text-align: center;
 }
 
 .intro p {
     font-size: 2.5em; /* Increased font size */
     font-family: 'Dancing Script', cursive; /* Cursive font for a stylish look */
-    color: #D4A373; /* Contrasting color for the text */
+    color: #0077B6; /* Contrasting color for the text */
     margin: 0;
 }
 
 h3 {
-    color: #D4A373;
+    color: #0077B6;
     margin-bottom: 15px;
 }
 
