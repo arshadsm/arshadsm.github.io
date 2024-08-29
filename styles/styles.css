@@ -99,19 +99,21 @@ header p {
     margin-left: 20px;
 }
 
-
+/* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #EEEEEE;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax values as needed */
-    gap: 20px; /* Adjust gap as needed */
+    background-color: #EEEEEE; /* Lightest gray for the background */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .portfolio-item {
+    width: calc(30% - 20px); /* Adjust width to account for spacing */
+    margin-bottom: 20px; /* Add some space below each item */
     border-radius: 10px;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White background for the portfolio items */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -119,7 +121,7 @@ header p {
 .portfolio-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; /* Keep the top corners rounded */
 }
 
 .portfolio-item:hover {
@@ -132,6 +134,7 @@ header p {
     text-align: center;
     color: #333333;
 }
+
 /* Footer */
 .footer {
     background-color: #CCCCCC; /* Medium gray for the footer */
