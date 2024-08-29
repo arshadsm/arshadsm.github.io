@@ -1,123 +1,66 @@
-/* Minimal CSS to enhance the HTML styling */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
 
-/* Typography */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #E5E5E5; /* Light text color */
-  background-color: #212F45; /* Dark background for the body */
-}
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #E5E5E5; /* Consistent light text color */
-}
+  <!-- Header Section -->
+  <header id="home">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
 
-/* Navigation Bar */
-nav {
-  background: linear-gradient(90deg, #006466, #065A60); /* Gradient using the first two colors */
-  padding: 20px 0; /* Add padding */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+  <!-- About Me Section -->
+  <section id="about-me" class="about-me">
+    <div class="about-me-text">
+        <h2>About Me</h2>
+        <p>Hey there! I'm Arshad, a data scientist dedicated to transforming raw data into meaningful insights that fuel smarter decisions. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards that make data understandable and actionable.</p>
+    </div>
+    <img src="{{ site.profile_picture }}" alt="Arshad's Picture">
+  </section>
 
-nav ul {
-  list-style: none; /* Remove bullet points */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio-item">
+      <img src="/images/project1.png" alt="Project 1">
+      <div class="caption">
+        <h3>MovieLens Recommendation System</h3>
+        <p>Recommends similar movies based on user history.</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="/images/project2.png" alt="Project 2">
+      <div class="caption">
+        <h3>Relation Extraction System</h3>
+        <p>Extracts relationships between entities using AI.</p>
+      </div>
+    </div>
+  </section>
 
-nav ul li {
-  margin: 0 15px;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
+    <p>
+      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+  </footer>
 
-nav ul li a {
-  color: #E5E5E5; /* Light color for the nav links */
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #144552; /* Slightly darker shade on hover */
-}
-
-/* Sections */
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 80px auto 20px; /* Adjust margins for spacing */
-  background-color: #272640; /* Dark section background */
-  border-radius: 10px;
-}
-
-/* About Me Section */
-.about-me {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #1B3A4B; /* Background color matching the palette */
-  border-radius: 10px;
-  color: #E5E5E5; /* Light text color */
-}
-
-.about-me-text h2 {
-  color: #D4A373; /* Contrasting color for About Me heading */
-}
-
-/* Slider */
-.slider {
-  position: relative;
-  max-width: 1000px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.caption {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* Footer */
-.footer {
-  background-color: #4D194D; /* Footer background */
-  color: #E5E5E5; /* Light text color */
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer a {
-  color: #E5E5E5;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #FFFFFF;
-}
+</body>
+</html>
