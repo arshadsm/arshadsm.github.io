@@ -1,8 +1,8 @@
 /* Typography */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #E5E5E5;
-    background-color: #212F45;
+    color: #333;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,7 +10,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+    color: #065A60;
     margin-bottom: 10px;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background: #006466;
+    background: #065A60;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -136,7 +136,7 @@ header p {
 
 /* Footer */
 .footer {
-    background-color: #1B3A4B;
+    background-color: #065A60;
     padding: 40px 0;
     text-align: center;
     color: #E5E5E5;
@@ -149,4 +149,40 @@ header p {
 
 .footer a:hover {
     color: #FFFFFF;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.service-item {
+  text-align: center;
+  background-color: #D4A373;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-icon {
+  font-size: 2.5em;
+  color: #E5E5E5;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #D4A373;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #E5E5E5;
 }
