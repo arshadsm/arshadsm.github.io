@@ -119,7 +119,7 @@ header p {
 }
 
 .portfolio-item img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px 10px 0 0; /* Keep the top corners rounded */
 }
