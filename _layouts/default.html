@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Link to the external styles.css file -->
@@ -12,46 +12,47 @@
 
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <header id="home" class="fade-in">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-  </header>
-  <section class="intro">
-    <p>"Raw data isn’t exciting — but I love turning it into something that is!"</p>
-  </section>
+
+  <!-- Split Layout for the introduction section -->
+  <div class="split-layout">
+    <div class="split-left">
+      <div>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <a href="#contact" class="button">Let's work together!</a>
+      </div>
+    </div>
+    <div class="split-right">
+      <img src="{{ site.profile_picture }}" alt="{{ site.title }}'s Picture">
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <div class="about-me-section">
+    <h2>About Me</h2>
+    <p>Hey there! I'm Arshad, a data scientist dedicated to transforming raw data into meaningful insights that fuel smarter decisions. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards that make data understandable and actionable.</p>
+  </div>
+
+  <!-- Services Section -->
   <section class="services fade-in" id="services">
     <div class="service-item">
-      <img src="/images/data_analysis.png" alt="Data Analysis Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <img src="/images/data_analysis.png" alt="Data Analysis Icon">
       <h3>Data Analysis</h3>
       <p>Specializing in data analysis to provide clear, actionable insights.</p>
     </div>
     <div class="service-item">
-      <img src="/images/machine_learning.png" alt="Machine Learning Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <img src="/images/machine_learning.png" alt="Machine Learning Icon">
       <h3>Machine Learning</h3>
       <p>Building predictive models using state-of-the-art techniques.</p>
     </div>
     <div class="service-item">
-      <img src="/images/dashboards.png" alt="Dashboards Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+      <img src="/images/dashboards.png" alt="Dashboards Icon">
       <h3>Dashboards</h3>
       <p>Creating interactive dashboards to visualize complex data.</p>
     </div>
   </section>
-  <section class="about-me fade-in" id="about-me">
-    <div class="about-me-text" style="padding-right: 40px; background-color: #1B3A4B; padding: 20px; border-radius: 10px;">
-        <h2 style="color: #E5E5E5;">About Me</h2>
-        <p>Hey there! I'm Arshad, a data scientist dedicated to transforming raw data into meaningful insights that fuel smarter decisions. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards that make data understandable and actionable.</p>
-    </div>
-    <img src="{{ site.profile_picture }}" alt="Arshad's Picture" style="margin-left: 20px; max-width: 280px; border-radius: 10px;">
-  </section>
+
+  <!-- Portfolio Section -->
   <section class="portfolio fade-in" id="portfolio">
     <div class="slider">
         <div class="slides">
@@ -78,14 +79,12 @@
     </div>
   </section>
 
-  <footer class="footer fade-in" id="contact">
-    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
-    <p>
-      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
-    </p>
-  </footer>
+  <!-- Contact Section -->
+  <div class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email Address: {{ site.email }}</p>
+    <p>Phone Number: 123-456-7890</p>
+  </div>
 
   <!-- Link to the external scripts.js file -->
   <script src="js/scripts.js"></script>
