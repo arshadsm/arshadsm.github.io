@@ -1,115 +1,115 @@
-/* General Settings */
+/* General Typography */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #FFFFFF;
+  color: #E5E5E5;
   background-color: #212F45;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #E5E5E5;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #006466, #065A60);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Split Layout */
-.split-layout {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
-.split-left, .split-right {
-  flex: 1;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 50px;
 }
 
-.split-left {
-  background-color: #000000;
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #E5E5E5;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #144552;
   color: #FFFFFF;
 }
 
-.split-right {
-  background-color: #F4F4F4;
-  color: #333333;
+/* Header Adjustment */
+header, section {
+  margin-top: 120px;
 }
 
-.split-right img {
-  max-width: 100%;
-  height: auto;
+/* Sections */
+section {
+  padding: 60px 20px;
+  background-color: #272640;
+  color: #E5E5E5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* About Me Section */
-.about-me-section {
+.about-me-text {
+  background-color: #1B3A4B;
+  color: #E5E5E5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-me h2 {
+  color: #D4A373; /* Use a distinct shade for the heading */
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #312244;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 50px;
-  background-color: #F4F4F4;
-  color: #333333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-image img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.about-me-section h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.about-me-section p {
-  font-size: 1.5em;
-  line-height: 1.6;
-}
-
-/* Services Section */
-.services {
-  padding: 50px;
-  background-color: #E5E5E5;
-  color: #333333;
-}
-
-.services h2 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
-}
-
-.service-item {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.service-item img {
-  max-width: 100px;
-  margin-bottom: 20px;
-}
-
-.service-item h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-/* Portfolio Section */
-.portfolio {
-  padding: 50px;
-  background-color: #212F45;
-  color: #FFFFFF;
-}
-
-.portfolio h2 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
-}
-
+/* Slider */
 .slider {
   position: relative;
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slides {
@@ -124,6 +124,8 @@ body {
 
 .slide img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -138,6 +140,7 @@ body {
   border-radius: 5px;
 }
 
+/* Navigation Buttons for Slider */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -167,39 +170,19 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 50px;
-  background-color: #F4F4F4;
-  color: #333333;
-  width: 100%;
-  text-align: left;
+/* Footer */
+.footer {
+  background-color: #4D194D;
+  color: #E5E5E5;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.contact-section h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.contact-section p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Button */
-.button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #FFFFFF;
-  color: #000000;
+.footer a {
+  color: #E5E5E5;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #F4F4F4;
-  color: #333333;
+.footer a:hover {
+  color: #FFFFFF;
 }
