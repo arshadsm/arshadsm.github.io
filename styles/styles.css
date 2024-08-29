@@ -2,15 +2,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #90E0EF; /* Light background from the new palette */
+    background-color: #F0F4F8;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Dancing Script', cursive; /* Use Dancing Script for headings */
-    color: #03045E; /* Dark text color from the new palette */
+    font-family: 'Dancing Script', cursive; /* Updated font for headings */
+    color: #023E8A; /* Updated color from the palette */
     margin-bottom: 10px;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background: #0077B6; /* Updated to a blue tone from the new palette */
+    background: #0077B6; /* Updated to match palette */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #CAF0F8; /* Light text color for contrast */
+    color: #E5E5E5;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #023E8A; /* Darker shade on hover */
+    background-color: #0077B6;
     color: #FFFFFF;
 }
 
@@ -61,19 +61,19 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #CAF0F8; /* Light blue background */
-    color: #0077B6; /* Contrasting color for text */
+    background-color: #90E0EF; /* Updated for better readability */
+    color: #03045E; /* Use a contrasting color for text */
     text-align: center;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 0;
 }
 
 header p {
-    font-size: 1.5em;
-    color: #03045E; /* Adjusted for better readability */
+    font-size: 2em;
+    color: #333; /* Adjusted for better readability */
 }
 
 /* About Me Section */
@@ -82,15 +82,15 @@ header p {
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #ADE8F4; /* Light blue background */
+    background-color: #ADE8F4; /* Updated background for better contrast */
 }
 
 .about-me-text {
     flex: 1;
     padding: 20px;
-    background-color: #90E0EF; /* Soft background color */
+    background-color: #CAF0F8; /* Soft background color */
     border-radius: 10px;
-    color: #0077B6; /* Darker text for better readability */
+    color: #333; /* Darker text for better readability */
 }
 
 .about-me img {
@@ -102,18 +102,18 @@ header p {
 /* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #CAF0F8;
+    background-color: #F0EFEB; /* Adjusting the background color to match the palette */
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
-    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .portfolio-item {
-    flex: 1 1 calc(50% - 20px); /* Two items per row */
-    margin-bottom: 20px; /* Space between rows */
+    width: 48%; /* Set each item to take up about half the container width */
+    margin-bottom: 20px; /* Add some space below each item */
     border-radius: 10px;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* Light background for the portfolio items */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -121,7 +121,7 @@ header p {
 .portfolio-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; /* Keep the top corners rounded */
 }
 
 .portfolio-item:hover {
@@ -132,15 +132,7 @@ header p {
 .caption {
     padding: 20px;
     text-align: center;
-    color: #0077B6;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .portfolio-item {
-        flex: 1 1 100%; /* Stack items vertically on smaller screens */
-        max-width: 100%;
-    }
+    color: #333;
 }
 
 /* Footer */
@@ -152,7 +144,7 @@ header p {
 }
 
 .footer a {
-    color: #03045E;
+    color: #333;
     text-decoration: none;
 }
 
@@ -163,19 +155,22 @@ header p {
 /* Services */
 .services {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Stack items vertically on small screens */
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
-    background-color: #90E0EF; /* Updated background for better contrast */
+    background-color: #CAF0F8; /* Updated background for better contrast */
 }
 
 .service-item {
     text-align: center;
-    background-color: #CAF0F8;
-    color: #0077B6;
+    background-color: #90E0EF;
+    color: #333;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .service-item:hover {
@@ -184,29 +179,20 @@ header p {
 
 .service-icon {
     font-size: 2.5em;
-    color: #03045E;
+    color: #333;
     margin-bottom: 15px;
 }
 
 /* Intro Section */
 .intro {
     padding: 50px 20px;
-    background-color: #ADE8F4; /* A soft background color */
+    background-color: #CAF0F8; /* A soft background color */
     text-align: center;
 }
 
 .intro p {
-    font-size: 2.5em; /* Increased font size */
+    font-size: 3em; /* Increased font size */
     font-family: 'Dancing Script', cursive; /* Cursive font for a stylish look */
-    color: #0077B6; /* Contrasting color for the text */
+    color: #023E8A; /* Contrasting color for the text */
     margin: 0;
-}
-
-h3 {
-    color: #0077B6;
-    margin-bottom: 15px;
-}
-
-p {
-    color: #333;
 }
