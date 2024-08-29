@@ -104,12 +104,12 @@ header p {
     padding: 60px 20px;
     background-color: #CAF0F8;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-between; /* Space out items evenly */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    justify-content: space-between; /* Space items evenly */
 }
 
 .portfolio-item {
-    flex: 1 1 calc(33.33% - 20px); /* Three items per row with space between */
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
     margin-bottom: 20px; /* Space between rows */
     border-radius: 10px;
     overflow: hidden;
@@ -135,16 +135,11 @@ header p {
     color: #0077B6;
 }
 
-/* Media queries for responsiveness */
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .portfolio-item {
-        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .portfolio-item {
-        flex: 1 1 100%; /* One item per row on very small screens */
+        flex: 1 1 100%; /* Stack items vertically on smaller screens */
+        max-width: 100%;
     }
 }
 
