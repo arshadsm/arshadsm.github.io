@@ -1,4 +1,4 @@
-/* Reset some basic styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,28 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #E5E5E5;
-    background-color: #212F45; /* Dark background */
-    line-height: 1.6;
-}
-
-/* Typography */
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #E5E5E5;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
+    background-color: #212F45;
 }
 
 /* Navigation Bar */
@@ -73,32 +52,14 @@ section {
     padding: 40px;
     background-color: #272640;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.intro {
-    text-align: center;
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-}
-
-/* About Me */
+/* About Me Section */
 .about-me {
     display: flex;
     align-items: center;
-}
-
-.about-me-text {
-    flex: 1;
-    margin-right: 20px;
     padding: 20px;
     background-color: #1B3A4B;
-    border-radius: 8px;
-}
-
-.about-me img {
-    flex: 1;
-    max-width: 300px;
     border-radius: 8px;
 }
 
@@ -108,11 +69,6 @@ section {
     border-radius: 8px;
     margin: 20px 0;
     overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
 }
 
 .portfolio-image img {
@@ -120,11 +76,6 @@ section {
     height: 300px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
-}
-
-.caption {
-    padding: 20px;
-    text-align: center;
 }
 
 /* Footer */
