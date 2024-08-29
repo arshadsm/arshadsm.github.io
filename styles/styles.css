@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #F0EFEB; /* Background color from the new palette */
+    background-color: #F0F4F8;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,18 +10,17 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #D4A373; /* Use a warm, inviting color from the palette */
+    color: #065A60;
     margin-bottom: 10px;
 }
 
 p {
     margin-bottom: 20px;
-    color: #333; /* Consistent text color */
 }
 
 /* Navigation Bar */
 nav {
-    background: #99C1DE; /* Softer color from the palette */
+    background: #065A60;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -43,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; /* Dark text color for contrast */
+    color: #E5E5E5;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -52,8 +51,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #FDE2E4; /* Hover effect with a soft, inviting color */
-    color: #000; /* Dark text color on hover */
+    background-color: #065A60;
+    color: #FFFFFF;
 }
 
 /* Header Section */
@@ -62,8 +61,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #C5DEDD; /* Background color from the palette */
-    color: #333; /* Dark text color */
+    background-color: #D6E2E9; /* Updated for better readability */
+    color: #D4A373; /* Use a contrasting color for text */
     text-align: center;
 }
 
@@ -74,7 +73,7 @@ header h1 {
 
 header p {
     font-size: 1.5em;
-    color: #D6E2E9; /* A soft color from the palette for contrast */
+    color: #333; /* Adjusted for better readability */
 }
 
 /* About Me Section */
@@ -83,15 +82,15 @@ header p {
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #DBE7E4; /* Soft background color for a welcoming feel */
+    background-color: #DBE7E4; /* Updated background for better contrast */
 }
 
 .about-me-text {
     flex: 1;
     padding: 20px;
-    background-color: #F0EFEB; /* Light background from the palette */
+    background-color: #FFF1E6; /* Soft background color */
     border-radius: 10px;
-    color: #333; /* Dark text color for readability */
+    color: #333; /* Darker text for better readability */
 }
 
 .about-me img {
@@ -103,17 +102,17 @@ header p {
 /* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #F0EFEB; /* Light background color for sections */
+    background-color: #DBE7E4;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Changed to space-between for better alignment */
 }
 
 .portfolio-item {
-    max-width: 48%;
+    width: 48%; /* Adjusted width for side-by-side layout */
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #C5DEDD; /* Background color from the palette */
+    background-color: #F0EFEB; /* Updated background color */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -132,59 +131,59 @@ header p {
 .caption {
     padding: 20px;
     text-align: center;
-    color: #333; /* Dark text color for readability */
+    color: #333; /* Darker text for readability */
 }
 
 /* Footer */
 .footer {
-    background-color: #99C1DE; /* Footer background from the palette */
+    background-color: #99C1DE; /* Updated footer color for contrast */
     padding: 40px 0;
     text-align: center;
-    color: #333; /* Dark text color */
+    color: #333;
 }
 
 .footer a {
-    color: #333; /* Dark link color */
+    color: #333;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #000; /* Darker color on hover */
+    color: #000;
 }
 
 /* Services */
 .services {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 0;
-  background-color: #FFF1E6; /* Soft background color for the services section */
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #FFF1E6; /* Updated background for better contrast */
 }
 
 .service-item {
-  text-align: center;
-  background-color: #C5DEDD; /* Background color for service items */
-  color: #333; /* Dark text color */
-  padding: 20px;
-  border-radius: 10px;
-  width: 30%;
-  transition: transform 0.3s ease;
+    text-align: center;
+    background-color: #C5DEDD;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease;
 }
 
 .service-item:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .service-icon {
-  font-size: 2.5em;
-  color: #99C1DE; /* Softer color for icons */
-  margin-bottom: 15px;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 h3 {
-  color: #D4A373; /* Accent color for headings */
-  margin-bottom: 15px;
+    color: #D4A373;
+    margin-bottom: 15px;
 }
 
 p {
-  color: #333; /* Dark text color */
+    color: #333;
 }
