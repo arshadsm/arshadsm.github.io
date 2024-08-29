@@ -2,15 +2,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #F0F4F8;
+    background-color: #EEEEEE; /* Background updated to the lightest gray */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Dancing Script', cursive; /* Updated font for headings */
-    color: #023E8A; /* Updated color from the palette */
+    font-family: 'Dancing Script', cursive; /* Cursive font for headings */
+    color: #333333; /* Darker gray for headings */
     margin-bottom: 10px;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background: #0077B6; /* Updated to match palette */
+    background: #AAAAAA; /* Updated to a medium gray */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E5E5E5;
+    color: #FFFFFF; /* Light color for the nav links */
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0077B6;
+    background-color: #BBBBBB; /* Slightly darker gray on hover */
     color: #FFFFFF;
 }
 
@@ -61,8 +61,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #90E0EF; /* Updated for better readability */
-    color: #03045E; /* Use a contrasting color for text */
+    background-color: #CCCCCC; /* Updated to a light gray */
+    color: #333333; /* Darker gray for text */
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ header h1 {
 
 header p {
     font-size: 2em;
-    color: #333; /* Adjusted for better readability */
+    color: #555555; /* Mid-gray for subtitle text */
 }
 
 /* About Me Section */
@@ -82,15 +82,15 @@ header p {
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #ADE8F4; /* Updated background for better contrast */
+    background-color: #DDDDDD; /* Light gray for section background */
 }
 
 .about-me-text {
     flex: 1;
     padding: 20px;
-    background-color: #CAF0F8; /* Soft background color */
+    background-color: #FFFFFF; /* White background for contrast */
     border-radius: 10px;
-    color: #333; /* Darker text for better readability */
+    color: #333333; /* Darker text for better readability */
 }
 
 .about-me img {
@@ -102,7 +102,7 @@ header p {
 /* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #F0EFEB; /* Adjusting the background color to match the palette */
+    background-color: #EEEEEE; /* Lightest gray for the background */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -113,7 +113,7 @@ header p {
     margin-bottom: 20px; /* Add some space below each item */
     border-radius: 10px;
     overflow: hidden;
-    background-color: #FFFFFF; /* Light background for the portfolio items */
+    background-color: #FFFFFF; /* White background for the portfolio items */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -132,40 +132,38 @@ header p {
 .caption {
     padding: 20px;
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 /* Footer */
 .footer {
-    background-color: #00B4D8; /* Updated footer color for contrast */
+    background-color: #CCCCCC; /* Medium gray for the footer */
     padding: 40px 0;
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 .footer a {
-    color: #333;
+    color: #333333;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #000;
+    color: #000000;
 }
 
 /* Services */
 .services {
     display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     padding: 50px 0;
-    background-color: #CAF0F8; /* Updated background for better contrast */
+    background-color: #DDDDDD; /* Light gray background for better contrast */
 }
 
 .service-item {
     text-align: center;
-    background-color: #90E0EF;
-    color: #333;
+    background-color: #CCCCCC; /* Medium gray background */
+    color: #333333;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -179,20 +177,20 @@ header p {
 
 .service-icon {
     font-size: 2.5em;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
 }
 
 /* Intro Section */
 .intro {
     padding: 50px 20px;
-    background-color: #CAF0F8; /* A soft background color */
+    background-color: #EEEEEE; /* A very light gray for the background */
     text-align: center;
 }
 
 .intro p {
     font-size: 3em; /* Increased font size */
     font-family: 'Dancing Script', cursive; /* Cursive font for a stylish look */
-    color: #023E8A; /* Contrasting color for the text */
+    color: #333333; /* Darker gray for the text */
     margin: 0;
 }
