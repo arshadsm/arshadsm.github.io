@@ -4,92 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Link to the external styles.css file -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Intro Section -->
-  <div class="split-layout">
-    <div class="split-left">
-      <div>
-        <h1>Hello, I'm Arshad!</h1>
-        <p>A Data Scientist turning raw data into valuable insights.</p>
-        <a href="#contact" class="button">Let's work together!</a>
-      </div>
-    </div>
-    <div class="split-right">
-      <img src="{{ site.profile_picture }}" alt="Arshad's Picture">
-    </div>
-  </div>
+  <header id="home">
+    <h1>Hello, I'm Mahammad Arshad Ayub Shaik!</h1>
+    <p>I am a Data Scientist with a passion for turning raw data into actionable insights.</p>
+  </header>
 
-  <!-- About Me Section -->
-  <div class="about-me-section">
-    <h2>About Me</h2>
-    <p>I have five years of experience in data science, specializing in data analysis, machine learning, and dashboard creation. I am passionate about making data understandable and actionable.</p>
-  </div>
+  <section class="intro">
+    <p>"Raw data isn’t exciting — but I love turning it into something that is!"</p>
+  </section>
 
-  <!-- Services Section -->
-  <section class="services fade-in" id="services">
-    <h2>What I Do</h2>
+  <section id="services">
+    <h2>Services</h2>
     <div class="service-item">
-      <img src="/images/data_analysis.png" alt="Data Analysis Icon">
       <h3>Data Analysis</h3>
       <p>Specializing in data analysis to provide clear, actionable insights.</p>
     </div>
     <div class="service-item">
-      <img src="/images/machine_learning.png" alt="Machine Learning Icon">
       <h3>Machine Learning</h3>
       <p>Building predictive models using state-of-the-art techniques.</p>
     </div>
     <div class="service-item">
-      <img src="/images/dashboards.png" alt="Dashboards Icon">
       <h3>Dashboards</h3>
       <p>Creating interactive dashboards to visualize complex data.</p>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section class="portfolio fade-in" id="portfolio">
+  <section id="about-me" class="about-me">
+    <div class="about-me-text">
+      <h2>About Me</h2>
+      <p>Hey there! I'm Arshad, a data scientist dedicated to transforming raw data into meaningful insights that fuel smarter decisions. With over five years of experience, I specialize in data analysis, machine learning, and creating interactive dashboards that make data understandable and actionable.</p>
+    </div>
+    <img src="{{ site.profile_picture }}" alt="Arshad's Picture">
+  </section>
+
+  <section id="portfolio">
     <h2>Portfolio</h2>
-    <div class="slider">
-        <div class="slides">
-            <!-- Each slide -->
-            <div class="slide">
-                <img src="/images/project1.png" alt="Project 1" loading="lazy">
-                <div class="caption">
-                    <h3>MovieLens Recommendation System</h3>
-                    <p>Recommends similar movies based on user history.</p>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="/images/project2.png" alt="Project 2" loading="lazy">
-                <div class="caption">
-                    <h3>Relation Extraction System</h3>
-                    <p>Extracts relationships between entities using AI.</p>
-                </div>
-            </div>
-            <!-- Add more slides as needed -->
-        </div>
-        <!-- Navigation buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="portfolio-item">
+      <div class="portfolio-image">
+        <img src="/images/project1.png" alt="Project 1">
+      </div>
+      <div class="caption">
+        <h3>MovieLens Recommendation System</h3>
+        <p>Recommends similar movies based on user history.</p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <div class="portfolio-image">
+        <img src="/images/project2.png" alt="Project 2">
+      </div>
+      <div class="caption">
+        <h3>Relation Extraction System</h3>
+        <p>Extracts relationships between entities using AI.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <div class="contact-section" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email Address: {{ site.email }}</p>
-    <p>Phone Number: (Your phone number here)</p>
-  </div>
+  <footer class="footer" id="contact">
+    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
+    <p>
+      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+  </footer>
 
-  <!-- Link to the external scripts.js file -->
   <script src="js/scripts.js"></script>
-
 </body>
 </html>
