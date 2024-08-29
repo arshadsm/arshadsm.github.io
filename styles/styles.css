@@ -102,26 +102,31 @@ header p {
 /* Portfolio Section */
 .portfolio {
     padding: 60px 20px;
-    background-color: #CAF0F8; /* Adjusting the background color to match the palette */
+    background-color: #CAF0F8;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
     justify-content: space-between;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
 }
 
 .portfolio-item {
-    width: 48%; /* Set each item to take up about half the container width */
-    margin-bottom: 20px; /* Add some space below each item */
+    flex: 0 0 30%; /* Adjust width as needed */
+    margin-right: 20px; /* Space between items */
     border-radius: 10px;
     overflow: hidden;
-    background-color: #FFFFFF; /* Light background for the portfolio items */
+    background-color: #FFFFFF;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:last-child {
+    margin-right: 0; /* No margin for the last item */
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px 10px 0 0; /* Keep the top corners rounded */
+    border-radius: 10px 10px 0 0;
 }
 
 .portfolio-item:hover {
@@ -134,6 +139,7 @@ header p {
     text-align: center;
     color: #0077B6;
 }
+
 
 /* Footer */
 .footer {
