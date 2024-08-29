@@ -1,143 +1,190 @@
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333; /* Text color */
-  background-color: #F0EFEB; /* Light background for the body */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #F0EFEB; /* Background color from the new palette */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #333; /* Consistent text color */
+    font-family: 'Montserrat', sans-serif;
+    color: #D4A373; /* Use a warm, inviting color from the palette */
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #333; /* Consistent text color */
 }
 
 /* Navigation Bar */
 nav {
-  background: linear-gradient(90deg, #99C1DE, #BCD4E6); /* Gradient using palette colors */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  padding: 10px 0;
+    background: #99C1DE; /* Softer color from the palette */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  color: #333; /* Dark text color */
-  text-decoration: none;
-  font-size: 1em;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    color: #333; /* Dark text color for contrast */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #D6E2E9; /* Hover effect color */
-  color: #000; /* Darker text color on hover */
+    background-color: #FDE2E4; /* Hover effect with a soft, inviting color */
+    color: #000; /* Dark text color on hover */
 }
 
-/* Buttons */
-button, .btn {
-  background: linear-gradient(90deg, #C5DEDD, #DBE7E4); /* Gradient using palette colors */
-  border: none;
-  color: #333; /* Dark text on buttons */
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #C5DEDD; /* Background color from the palette */
+    color: #333; /* Dark text color */
+    text-align: center;
 }
 
-button:hover, .btn:hover {
-  background: linear-gradient(90deg, #BCD4E6, #99C1DE); /* Darker gradient on hover */
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0;
 }
 
-/* Sections */
-section {
-  padding: 60px 20px;
-  background-color: #FFF1E6; /* Light background color for sections */
-  color: #333; /* Dark text color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-bottom: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+header p {
+    font-size: 1.5em;
+    color: #D6E2E9; /* A soft color from the palette for contrast */
 }
 
 /* About Me Section */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #DBE7E4; /* Soft background color for a welcoming feel */
+}
+
 .about-me-text {
-  background-color: #FDE2E4; /* Background color using palette */
-  color: #333; /* Dark text color */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+    flex: 1;
+    padding: 20px;
+    background-color: #F0EFEB; /* Light background from the palette */
+    border-radius: 10px;
+    color: #333; /* Dark text color for readability */
 }
 
-.about-me h2 {
-  color: #EDDCD2; /* Use a different shade for the heading */
+.about-me img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
-/* Portfolio Items */
+/* Portfolio Section */
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+    padding: 60px 20px;
+    background-color: #F0EFEB; /* Light background color for sections */
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio-item {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #FFF1E6; /* Background color for portfolio items */
-  width: 48%; /* Adjust the width to make them side by side */
-  display: flex;
-  flex-direction: column;
+    max-width: 48%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #C5DEDD; /* Background color from the palette */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-image img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
 }
 
 .caption {
-  padding: 10px;
-  background-color: #FAD2E1; /* Caption background using palette */
-  color: #333; /* Dark text color */
-  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Dark text color for readability */
 }
 
 /* Footer */
 .footer {
-  background-color: #D6E2E9; /* Light footer background */
-  color: #333; /* Dark text color */
-  padding: 40px 0;
-  text-align: center;
+    background-color: #99C1DE; /* Footer background from the palette */
+    padding: 40px 0;
+    text-align: center;
+    color: #333; /* Dark text color */
 }
 
 .footer a {
-  color: #333; /* Dark link color */
-  text-decoration: none;
+    color: #333; /* Dark link color */
+    text-decoration: none;
 }
 
 .footer a:hover {
-  color: #000; /* Darker color on hover */
+    color: #000; /* Darker color on hover */
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #FFF1E6; /* Soft background color for the services section */
+}
+
+.service-item {
+  text-align: center;
+  background-color: #C5DEDD; /* Background color for service items */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-icon {
+  font-size: 2.5em;
+  color: #99C1DE; /* Softer color for icons */
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #D4A373; /* Accent color for headings */
+  margin-bottom: 15px;
+}
+
+p {
+  color: #333; /* Dark text color */
 }
