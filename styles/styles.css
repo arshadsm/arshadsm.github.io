@@ -68,15 +68,17 @@ header {
 }
 
 header h1 {
-    font-size: 3.5em;
+    font-size: 4.5em; /* Increased font size for the title */
     margin-bottom: 0;
     color: #FFFFFF;
 }
 
 header p {
-    font-size: 2em;
+    font-size: 1.8em; /* Reduced font size for the subtitle */
     color: #CCCCCC; /* Light gray for subtitle text */
+    margin-top: 10px; /* Added margin to separate title and subtitle */
 }
+
 
 /* About Me Section */
 .about-me {
