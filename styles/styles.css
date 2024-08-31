@@ -101,7 +101,7 @@ header p {
     max-width: 300px;
     border-radius: 10px;
     margin-left: 20px;
-    filter: grayscale(100%); /* Black and white image */
+    /*filter: grayscale(100%);  Black and white image */
 }
 
 /* Portfolio Section */
@@ -138,7 +138,7 @@ header p {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
-  filter: grayscale(100%); /* Black and white image */
+  /*filter: grayscale(100%); Black and white image */
 }
 
 .portfolio-item:hover {
