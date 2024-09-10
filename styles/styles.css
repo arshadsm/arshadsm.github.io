@@ -121,6 +121,8 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .portfolio-item {
