@@ -124,8 +124,8 @@ header p {
 }
 
 .portfolio-item {
-  width: calc(48% - 20px); 
-  margin-bottom: 20px;
+  width: calc(24% - 10px); /* Adjusted width to make it half of the original width */
+  margin-bottom: 10px; /* Adjusted margin to maintain spacing */
   border-radius: 10px;
   overflow: hidden;
   background-color: #111111; /* Slightly lighter black */
