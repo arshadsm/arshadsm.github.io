@@ -2,7 +2,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF; /* White text */
-    background-color: #000000; /* Black background */
+    /* background-color: #000000; Black background */
+    background: linear-gradient(180deg, #000000, #1c1c1c); /* Subtle gradient */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -12,6 +13,8 @@ h1, h2, h3 {
     font-family: 'Dancing Script', cursive; /* Cursive font for headings */
     color: #FFFFFF; /* White for headings */
     margin-bottom: 10px;
+    font-weight: 700; /* Make headers bolder */
+    letter-spacing: 1px; /* Add spacing between letters */
 }
 
 p {
@@ -52,8 +55,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #333333; /* Slightly lighter black on hover */
-    color: #FFFFFF;
+    /* background-color: #333333; Slightly lighter black on hover */
+    /* color: #FFFFFF; */
+    background-color: #555555; /* Add a medium gray color */
+    color: #FFD700;
 }
 
 /* Header Section */
@@ -143,14 +148,21 @@ header p {
 }
 
 .portfolio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.3);
+  /* transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.3); */
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3); /* Light yellow shadow */
 }
 
 .caption {
   padding: 20px;
   text-align: center;
   color: #FFFFFF; /* White text inside caption */
+}
+
+.caption:hover {
+    color: #FFD700; /* Gold text hover */
+    font-weight: bold;
 }
 
 /* Footer */
@@ -167,9 +179,16 @@ header p {
 }
 
 .footer a:hover {
-    color: #CCCCCC; /* Light gray on hover */
+    /* color: #CCCCCC; /* Light gray on hover */
+    color: #FFD700;
+}
+.footer i {
+    transition: color 0.3s ease;
 }
 
+.footer i:hover {
+    color: #FFD700; /* Gold icon color on hover */
+}
 /* Services Section */
 .services {
     display: flex;
@@ -221,4 +240,21 @@ header p {
     font-family: 'Dancing Script', cursive;
     color: #FFFFFF; /* White text */
     margin: 0;
+}
+
+/* Introduce Section Dividers */
+.services, .about-me, .portfolio {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
