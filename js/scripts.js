@@ -39,6 +39,28 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%; /* Stack services vertically on mobile */
+        margin-bottom: 20px;
+    }
+    .portfolio-item {
+        width: 100%; /* Stack portfolio items on mobile */
+    }
+}
+
+const fadeIns = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    fadeIns.forEach(fade => {
+        const rect = fade.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            fade.classList.add('visible');
+        }
+    });
+});
+
+
 let slideIndex = 0;
 showSlides();
 
