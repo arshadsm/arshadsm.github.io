@@ -251,7 +251,7 @@ header p {
     transition: none; /* No transition delay */
 }
 
-/* Fade-in class behavior for other elements */
+/* Fade-in class behavior for other elements 
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -262,4 +262,4 @@ header p {
     opacity: 1;
     transform: translateY(0);
 }
-
+*/
