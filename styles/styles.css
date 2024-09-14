@@ -244,12 +244,14 @@ header p {
     margin: 0;
 }
 
-/* Introduce Section Dividers */
+/* Ensure services, about-me, and portfolio sections are visible */
 .services, .about-me, .portfolio {
-    border-top: 1px solid #333333;
-    padding-top: 20px;
+    opacity: 1; /* Immediate visibility */
+    transform: translateY(0); /* No transformation */
+    transition: none; /* No transition delay */
 }
 
+/* Fade-in class behavior for other elements */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -260,3 +262,4 @@ header p {
     opacity: 1;
     transform: translateY(0);
 }
+
