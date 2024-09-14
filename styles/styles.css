@@ -167,21 +167,21 @@ header p {
 
 /* Footer */
 .footer {
-    background-color: #111111; /* Darker black for the footer */
+    background-color: #111111; /* Keep the dark black background */
     padding: 40px 0;
     text-align: center;
-    color: #FFFFFF; /* White text */
+    color: #E0E0E0; /* Slightly lighter gray text for better contrast */
 }
 
 .footer a {
-    color: #FFFFFF;
+    color: #FFD700; /* Gold links for better visibility */
     text-decoration: none;
 }
 
 .footer a:hover {
-    /* color: #CCCCCC; /* Light gray on hover */
-    color: #FFD700;
+    color: #FFEA00; /* Brighter gold on hover for better contrast */
 }
+
 .footer i {
     transition: color 0.3s ease;
 }
@@ -189,34 +189,40 @@ header p {
 .footer i:hover {
     color: #FFD700; /* Gold icon color on hover */
 }
+
 /* Services Section */
 .services {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: #111111; /* Dark black background */
+    background-color: #111111; /* Dark background */
     flex-wrap: wrap;
 }
 
 .service-item {
     text-align: center;
-    background-color: #222222; /* Slightly lighter black */
+    background-color: #2C2C2C; /* Lighter black for better visibility */
     color: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     margin: 0 10px 20px 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .service-item:hover {
     transform: scale(1.05);
+    background-color: #444444; /* Lighter background on hover */
 }
 
 .service-icon {
     font-size: 2.5em;
-    color: #FFFFFF;
+    color: #FFD700; /* Gold icons for better visual pop */
     margin-bottom: 15px;
+}
+
+.service-icon:hover {
+    color: #FFEA00; /* Slightly brighter gold on hover */
 }
 
 /* Section Heading */
