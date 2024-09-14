@@ -167,19 +167,19 @@ header p {
 
 /* Footer */
 .footer {
-    background-color: #111111; /* Keep the dark black background */
+    background-color: #111111; /* Reverting back to darker black for the footer */
     padding: 40px 0;
     text-align: center;
-    color: #E0E0E0; /* Slightly lighter gray text for better contrast */
+    color: #FFFFFF; /* White text for readability */
 }
 
 .footer a {
-    color: #FFD700; /* Gold links for better visibility */
+    color: #FFFFFF; /* White links to match the theme */
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #FFEA00; /* Brighter gold on hover for better contrast */
+    color: #FFD700; /* Gold on hover for subtle emphasis */
 }
 
 .footer i {
@@ -187,7 +187,7 @@ header p {
 }
 
 .footer i:hover {
-    color: #FFD700; /* Gold icon color on hover */
+    color: #FFD700; /* Gold icon color on hover for a consistent look */
 }
 
 /* Services Section */
@@ -195,34 +195,30 @@ header p {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: #111111; /* Dark background */
+    background-color: #111111; /* Dark background restored */
     flex-wrap: wrap;
 }
 
 .service-item {
     text-align: center;
-    background-color: #2C2C2C; /* Lighter black for better visibility */
-    color: #FFFFFF;
+    background-color: #222222; /* Slightly lighter black for the service items */
+    color: #FFFFFF; /* White text to contrast with the dark background */
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     margin: 0 10px 20px 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .service-item:hover {
     transform: scale(1.05);
-    background-color: #444444; /* Lighter background on hover */
+    background-color: #333333; /* Slightly lighter on hover for better visibility */
 }
 
 .service-icon {
     font-size: 2.5em;
-    color: #FFD700; /* Gold icons for better visual pop */
+    color: #FFFFFF; /* White for icons */
     margin-bottom: 15px;
-}
-
-.service-icon:hover {
-    color: #FFEA00; /* Slightly brighter gold on hover */
 }
 
 /* Section Heading */
