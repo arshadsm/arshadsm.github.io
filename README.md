@@ -1,11 +1,7 @@
+# Welcome to My Portfolio
+
 ## Mahammad Arshad Ayub Shaik
 ### Data Scientist
-#### arshadsm.github.io
----
-layout: default
-title: Home
----
-## Welcome to My Portfolio
 
 ## Professional Experience
 <p><strong>Data Scientist</strong> | <em>Accenture (2019 - 2023)</em></p>
