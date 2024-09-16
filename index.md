@@ -16,14 +16,14 @@ title: Home
 </ul>
 
 ## Education
-<p><strong>Master of Science in Business Analytics and Information Systems</strong> | <em>University of South Florida (2023 - 2024)</em></p>
+<p><strong>Master of Science, Business Analytics and Information Systems</strong> <br> <em>University of South Florida (2023 - 2024)</em></p>
 
 ## Projects:
-  - title: **MovieLens Recommendation System**
-    description: "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
+  - **MovieLens Recommendation System**
+    : "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
     <br>
-  - title: **Relation Extraction using Transfer Learning**
-    description: "Extracts relationships between entities in text using a neural sequential transfer learning model, improving accuracy by fine-tuning on large datasets."
+  - **Relation Extraction using Transfer Learning**
+    : "Extracts relationships between entities in text using a neural sequential transfer learning model, improving accuracy by fine-tuning on large datasets."
 
 ## Skills:
   - **Databases & Languages:** Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata
