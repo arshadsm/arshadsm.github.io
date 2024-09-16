@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-# Welcome to My Personal Website
+# Welcome to My Portfolio
 
 ## Professional Experience
 <p><strong>Data Scientist</strong> | <em>Accenture (2019 - 2023)</em></p>
@@ -21,19 +21,18 @@ title: Home
 ## Projects:
   - title: **MovieLens Recommendation System**
     description: "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
-    link: /notebooks/MovieLens_Recommendation_System.ipynb
+    <br>
   - title: **Relation Extraction using Transfer Learning**
     description: "Extracts relationships between entities in text using a neural sequential transfer learning model, improving accuracy by fine-tuning on large datasets."
-    link: /notebooks/RelationExtractionSystem.ipynb
 
 ## Skills:
-  - "**Databases & Languages:** Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata"
-  - "**Statistical Methods:** ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals"
-  - "**Machine Learning:** Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP), Transfer Learning"
-  - "**Image Analysis:** Auto-encoder Neural Networks, Deep Feature Learning, Medical Image Processing"
-  - "**Hadoop Ecosystem:** Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume"
-  - "**Data Visualization:** Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2"
-  - "**Operating Systems:** Windows, UNIX/UNIX Shell Scripting, Linux"
-  - "**Cloud Computing and Version Control Systems:** MS Azure, AWS - RedShift, EC2, EMR, S3, Git"
-  - "**Soft Skills:** Leadership skills, Interpersonal, Oral and Written communication"
+  - **Databases & Languages:** Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata
+  - **Statistical Methods:** ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals
+  - **Machine Learning:** Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP), Transfer Learning
+  - **Image Analysis:** Auto-encoder Neural Networks, Deep Feature Learning, Medical Image Processing
+  - **Hadoop Ecosystem:** Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume
+  - **Data Visualization:** Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2
+  - **Operating Systems:** Windows, UNIX/UNIX Shell Scripting, Linux
+  - **Cloud Computing and Version Control Systems:** MS Azure, AWS - RedShift, EC2, EMR, S3, Git
+  - **Soft Skills:** Leadership skills, Interpersonal, Oral and Written communication
 
