@@ -18,21 +18,22 @@ title: Home
 ## Education
 <p><strong>Master of Science in Business Analytics and Information Systems</strong> | <em>University of South Florida (2023 - 2024)</em></p>
 
-## Skills
-<ul>
-{% for skill in site.skills %}
-  <li>{{ skill | markdownify }}</li>
-{% endfor %}
-</ul>
+## Projects:
+  - title: **MovieLens Recommendation System**
+    description: "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
+    link: /notebooks/MovieLens_Recommendation_System.ipynb
+  - title: **Relation Extraction using Transfer Learning**
+    description: "Extracts relationships between entities in text using a neural sequential transfer learning model, improving accuracy by fine-tuning on large datasets."
+    link: /notebooks/RelationExtractionSystem.ipynb
 
-
-## Projects
-<ul>
-{% for project in site.projects %}
-  <li>
-    <strong>{{ project.title }}</strong> - {{ project.description }} 
-    <a href="{{ project.link }}">View Project</a>
-  </li>
-{% endfor %}
-</ul>
+## Skills:
+  - "**Databases & Languages:** Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata"
+  - "**Statistical Methods:** ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals"
+  - "**Machine Learning:** Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP), Transfer Learning"
+  - "**Image Analysis:** Auto-encoder Neural Networks, Deep Feature Learning, Medical Image Processing"
+  - "**Hadoop Ecosystem:** Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume"
+  - "**Data Visualization:** Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2"
+  - "**Operating Systems:** Windows, UNIX/UNIX Shell Scripting, Linux"
+  - "**Cloud Computing and Version Control Systems:** MS Azure, AWS - RedShift, EC2, EMR, S3, Git"
+  - "**Soft Skills:** Leadership skills, Interpersonal, Oral and Written communication"
 
