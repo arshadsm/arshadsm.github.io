@@ -27,6 +27,7 @@ header {
     background-color: #FFF1E6;
     padding: 20px;
     border-radius: 15px;
+    height: 100%; /* Ensures the header takes full height */
 }
 
 header h1 {
@@ -43,12 +44,14 @@ header h1 {
     background-color: #DBE7E4;
     padding: 20px;
     border-radius: 15px;
+    height: 100%; /* Ensures the intro takes full height */
 }
 
 .intro img {
     border-radius: 10px; /* Image in a rectangle with rounded corners */
     width: 100%; /* Full width */
     margin-bottom: 20px;
+    object-fit: cover; /* Ensures images cover the area without distortion */
 }
 
 .projects {
@@ -56,6 +59,7 @@ header h1 {
     background-color: #D6E2E9;
     padding: 20px;
     border-radius: 15px;
+    height: 100%; /* Ensures the projects section takes full height */
 }
 
 .projects h2 {
@@ -67,6 +71,7 @@ header h1 {
     width: 100%; /* Full width of the project box */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
+    object-fit: cover; /* Ensures images cover the area without distortion */
 }
 
 .contact {
@@ -75,6 +80,7 @@ header h1 {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
+    height: auto; /* Adjust as necessary, can also be set to a fixed height */
 }
 
 .contact p {
@@ -105,5 +111,6 @@ footer a {
     }
     .intro, .projects, .contact {
         grid-column: span 1;
+        height: auto; /* Adjust as necessary for stacking */
     }
 }
