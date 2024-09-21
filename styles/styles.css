@@ -2,7 +2,7 @@
 /* General Styling */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FDE2E4;
+    background-color: #8B4513; /* Brown background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -40,6 +40,7 @@ header h1 {
     background-color: #DBE7E4;
     padding: 20px;
     border-radius: 15px;
+    max-width: 600px; /* Limit the width for better alignment */
 }
 
 .intro img {
@@ -57,6 +58,12 @@ header h1 {
 .projects h2 {
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.projects img {
+    width: 100%; /* Ensure project images span full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
 }
 
 .contact {
