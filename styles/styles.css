@@ -45,7 +45,7 @@ header h1 {
 
 .intro img {
     border-radius: 50%;
-    width: 100px; /* Reduced size for the profile picture */
+    width: 50px; /* Reduced size for the profile picture */
     margin-right: 20px;
 }
 
