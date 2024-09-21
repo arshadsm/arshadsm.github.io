@@ -1,116 +1,265 @@
-/* General Styling */
+/* Typography */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #94d2bd;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF; /* White text */
+    /* background-color: #000000; Black background */
+    background: linear-gradient(180deg, #000000, #1c1c1c); /* Subtle gradient */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive; /* Cursive font for headings */
+    color: #FFFFFF; /* White for headings */
+    margin-bottom: 10px;
+    font-weight: 700; /* Make headers bolder */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White text for paragraphs */
+}
+
+/* Navigation Bar */
+nav {
+    background: #111111; /* Darker black for the nav background */
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3); /* Light shadow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Adjusting the columns for better layout */
-    grid-gap: 20px;
-    grid-template-rows: auto auto;
+nav ul li {
+    margin: 0 15px;
 }
 
+nav ul li a {
+    color: #FFFFFF; /* White for the nav links */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    /* background-color: #333333; Slightly lighter black on hover */
+    /* color: #FFFFFF; */
+    background-color: #555555; /* Add a medium gray color */
+    color: #FFD700;
+}
+
+/* Header Section */
 header {
-    grid-column: 1 / 2; /* Occupying one section on the left */
-    text-align: left; /* Align the text to the left */
-    background-color: #FFF1E6;
-    padding: 20px;
-    border-radius: 15px;
-    height: 100%; /* Ensures the header takes full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #333;
-    line-height: 1.2;
+    font-size: 4.5em; /* Increased font size for the title */
+    margin-bottom: 0;
+    color: #FFFFFF;
 }
 
-.intro {
-    grid-column: 1 / 2; /* Intro section occupying the left side */
+header p {
+    font-size: 1.8em; /* Reduced font size for the subtitle */
+    color: #CCCCCC; /* Light gray for subtitle text */
+    margin-top: 10px; /* Added margin to separate title and subtitle */
+}
+
+
+/* About Me Section */
+.about-me {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #DBE7E4;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #111111; /* Darker black for section background */
+}
+
+.about-me-text {
+    flex: 1;
     padding: 20px;
-    border-radius: 15px;
-    height: 100%; /* Ensures the intro takes full height */
-}
-
-.intro img {
-    border-radius: 10px; /* Image in a rectangle with rounded corners */
-    width: 100%; /* Full width */
-    margin-bottom: 20px;
-    object-fit: cover; /* Ensures images cover the area without distortion */
-}
-
-.projects {
-    grid-column: 2 / 3; /* Projects on the right side */
-    background-color: #D6E2E9;
-    padding: 20px;
-    border-radius: 15px;
-    height: 100%; /* Ensures the projects section takes full height */
-}
-
-.projects h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.projects img {
-    width: 100%; /* Full width of the project box */
-    height: auto; /* Maintain aspect ratio */
+    background-color: #222222; /* Slightly lighter black for contrast */
     border-radius: 10px;
-    object-fit: cover; /* Ensures images cover the area without distortion */
+    color: #FFFFFF; /* White text */
 }
 
-.contact {
-    grid-column: 1 / span 2; /* Contact spanning both columns */
-    background-color: #FAD2E1;
-    padding: 20px;
-    border-radius: 15px;
+.about-me img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+    /*filter: grayscale(100%);  Black and white image */
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 60px 20px;
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+}
+
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #FFFFFF; /* White heading */
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  justify-content: space-around;
+}
+
+.portfolio-item {
+  width: calc(24% - 10px); /* Adjusted width to make it half of the original width */
+  margin-bottom: 10px; /* Adjusted margin to maintain spacing */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #111111; /* Slightly lighter black */
+  color: #FFFFFF; /* White text */
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  /*filter: grayscale(100%); Black and white image */
+}
+
+.portfolio-item:hover {
+  /* transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.3); */
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3); /* Light yellow shadow */
+}
+
+.caption {
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF; /* White text inside caption */
+}
+
+.caption:hover {
+    color: #FFD700; /* Gold text hover */
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #111111; /* Reverting back to darker black for the footer */
+    padding: 40px 0;
     text-align: center;
-    height: auto; /* Adjust as necessary, can also be set to a fixed height */
+    color: #FFFFFF; /* White text for readability */
 }
 
-.contact p {
-    font-size: 1.5em;
+.footer a {
+    color: #FFFFFF; /* White links to match the theme */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFD700; /* Gold on hover for subtle emphasis */
+}
+
+.footer i {
+    transition: color 0.3s ease;
+}
+
+.footer i:hover {
+    color: #FFD700; /* Gold icon color on hover for a consistent look */
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #111111; /* Dark background restored */
+    flex-wrap: wrap;
+}
+
+.service-item {
+    text-align: center;
+    background-color: #222222; /* Slightly lighter black for the service items */
+    color: #FFFFFF; /* White text to contrast with the dark background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 10px 20px 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background-color: #333333; /* Slightly lighter on hover for better visibility */
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: #FFFFFF; /* White for icons */
+    margin-bottom: 15px;
+}
+
+/* Section Heading */
+.services-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #FFFFFF;
+}
+
+/* Intro Section */
+.intro {
+    padding: 50px 20px;
+    background-color: #000000; /* Black background */
+    text-align: center;
+}
+
+.intro p {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    color: #FFFFFF; /* White text */
     margin: 0;
 }
 
-footer {
-    grid-column: 1 / span 2; /* Footer spanning both columns */
-    text-align: center;
-    margin-top: 20px;
+/* Ensure services, about-me, and portfolio sections are visible */
+.services, .about-me, .portfolio {
+    opacity: 1; /* Immediate visibility */
+    transform: translateY(0); /* No transformation */
+    transition: none; /* No transition delay */
 }
 
-footer p {
-    margin: 5px 0;
+/* Fade-in class behavior for other elements 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-footer a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-/* Make sure elements adapt properly on smaller screens */
-@media only screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
-    }
-    .intro, .projects, .contact {
-        grid-column: span 1;
-        height: auto; /* Adjust as necessary for stacking */
-    }
-}
+*/
