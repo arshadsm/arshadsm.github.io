@@ -1,31 +1,30 @@
 /* Typography */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF; /* White text */
-    /* background-color: #000000; Black background */
-    background: linear-gradient(180deg, #000000, #1c1c1c); /* Subtle gradient */
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #000000, #1c1c1c);
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'Dancing Script', cursive; /* Cursive font for headings */
-    color: #FFFFFF; /* White for headings */
+    font-family: 'Dancing Script', cursive;
+    color: #FFFFFF;
     margin-bottom: 10px;
-    font-weight: 700; /* Make headers bolder */
-    letter-spacing: 1px; /* Add spacing between letters */
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 p {
     margin-bottom: 20px;
-    color: #FFFFFF; /* White text for paragraphs */
+    color: #FFFFFF;
 }
 
 /* Navigation Bar */
 nav {
-    background: #111111; /* Darker black for the nav background */
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3); /* Light shadow */
+    background: #111111;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3);
     position: fixed;
     width: 100%;
     top: 0;
@@ -39,6 +38,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Improved responsiveness */
 }
 
 nav ul li {
@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF; /* White for the nav links */
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -55,9 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* background-color: #333333; Slightly lighter black on hover */
-    /* color: #FFFFFF; */
-    background-color: #555555; /* Add a medium gray color */
+    background-color: #555555;
     color: #FFD700;
 }
 
@@ -67,75 +65,76 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
 }
 
 header h1 {
-    font-size: 4.5em; /* Increased font size for the title */
+    font-size: 4em;
     margin-bottom: 0;
-    color: #FFFFFF;
 }
 
 header p {
-    font-size: 1.8em; /* Reduced font size for the subtitle */
-    color: #CCCCCC; /* Light gray for subtitle text */
-    margin-top: 10px; /* Added margin to separate title and subtitle */
+    font-size: 1.6em;
+    color: #CCCCCC;
+    margin-top: 10px;
 }
-
 
 /* About Me Section */
 .about-me {
     display: flex;
+    flex-wrap: wrap; /* Improved layout on smaller screens */
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #111111; /* Darker black for section background */
+    background-color: #111111;
 }
 
 .about-me-text {
     flex: 1;
     padding: 20px;
-    background-color: #222222; /* Slightly lighter black for contrast */
+    background-color: #222222;
     border-radius: 10px;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF;
+    margin: 10px;
 }
 
 .about-me img {
     max-width: 300px;
     border-radius: 10px;
     margin-left: 20px;
-    /*filter: grayscale(100%);  Black and white image */
+    margin-top: 10px;
 }
 
 /* Portfolio Section */
 #portfolio {
   padding: 60px 20px;
-  background-color: #000000; /* Black background */
-  color: #FFFFFF; /* White text */
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 #portfolio h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: #FFFFFF; /* White heading */
 }
 
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 20px;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 15px;
 }
 
 .portfolio-item {
-  width: calc(24% - 10px); /* Adjusted width to make it half of the original width */
-  margin-bottom: 10px; /* Adjusted margin to maintain spacing */
+  width: calc(100% / 3 - 20px);
+  max-width: 300px; /* Set max width for better responsiveness */
+  margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #111111; /* Slightly lighter black */
-  color: #FFFFFF; /* White text */
+  background-color: #111111;
+  color: #FFFFFF;
   box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -144,42 +143,38 @@ header p {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
-  /*filter: grayscale(100%); Black and white image */
 }
 
 .portfolio-item:hover {
-  /* transform: translateY(-10px);
-  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.3); */
-  transform: scale(1.05); /* Slight zoom */
-  box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3); /* Light yellow shadow */
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3);
 }
 
 .caption {
   padding: 20px;
   text-align: center;
-  color: #FFFFFF; /* White text inside caption */
 }
 
 .caption:hover {
-    color: #FFD700; /* Gold text hover */
+    color: #FFD700;
     font-weight: bold;
 }
 
 /* Footer */
 .footer {
-    background-color: #111111; /* Reverting back to darker black for the footer */
+    background-color: #111111;
     padding: 40px 0;
     text-align: center;
-    color: #FFFFFF; /* White text for readability */
+    color: #FFFFFF;
 }
 
 .footer a {
-    color: #FFFFFF; /* White links to match the theme */
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #FFD700; /* Gold on hover for subtle emphasis */
+    color: #FFD700;
 }
 
 .footer i {
@@ -187,7 +182,7 @@ header p {
 }
 
 .footer i:hover {
-    color: #FFD700; /* Gold icon color on hover for a consistent look */
+    color: #FFD700;
 }
 
 /* Services Section */
@@ -195,29 +190,30 @@ header p {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-    background-color: #111111; /* Dark background restored */
+    background-color: #111111;
     flex-wrap: wrap;
+    gap: 15px; /* Added gap for spacing */
 }
 
 .service-item {
     text-align: center;
-    background-color: #222222; /* Slightly lighter black for the service items */
-    color: #FFFFFF; /* White text to contrast with the dark background */
+    background-color: #222222;
+    color: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
-    margin: 0 10px 20px 10px;
+    width: calc(100% / 3 - 20px);
+    max-width: 300px; /* Set max width for better responsiveness */
     transition: transform 0.3s ease;
 }
 
 .service-item:hover {
     transform: scale(1.05);
-    background-color: #333333; /* Slightly lighter on hover for better visibility */
+    background-color: #333333;
 }
 
 .service-icon {
     font-size: 2.5em;
-    color: #FFFFFF; /* White for icons */
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -233,33 +229,26 @@ header p {
 /* Intro Section */
 .intro {
     padding: 50px 20px;
-    background-color: #000000; /* Black background */
+    background-color: #000000;
     text-align: center;
 }
 
 .intro p {
     font-size: 3em;
     font-family: 'Dancing Script', cursive;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF;
     margin: 0;
 }
 
-/* Ensure services, about-me, and portfolio sections are visible */
-.services, .about-me, .portfolio {
-    opacity: 1; /* Immediate visibility */
-    transform: translateY(0); /* No transformation */
-    transition: none; /* No transition delay */
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .portfolio-item,
+    .service-item {
+        width: calc(100% - 20px);
+        max-width: 100%;
+    }
 
-/* Fade-in class behavior for other elements 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    nav ul {
+        flex-direction: column;
+    }
 }
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-*/
