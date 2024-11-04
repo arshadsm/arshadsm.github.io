@@ -293,3 +293,34 @@ header p {
 }
 
 
+/* Background Animation Container */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Places it behind main content */
+    overflow: hidden;
+    opacity: 0.2; /* Low opacity to avoid distraction */
+}
+
+/* Particle Animation */
+.particle {
+    fill: #FFD700; /* Customize color */
+    opacity: 0.6;
+    animation: float 10s ease-in-out infinite;
+}
+
+/* Animation Keyframes for Floating Effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(-10px) translateX(10px);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}
