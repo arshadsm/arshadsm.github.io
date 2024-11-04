@@ -16,6 +16,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Typewriter effect for header
+const typeWriterText = "Data Engineering Portfolio";
+let i = 0;
+
+function typeWriter() {
+    if (i < typeWriterText.length) {
+        document.getElementById("typewriter").innerHTML += typeWriterText.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100); // Adjust speed as needed
+    }
+}
+window.onload = typeWriter;
+
 // Fade-In Effect on Scroll
 const faders = document.querySelectorAll('.fade-in');
 
@@ -39,18 +52,6 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
-// Typewriter effect for header
-const typeWriterText = "Data Engineering Portfolio";
-let i = 0;
-
-function typeWriter() {
-    if (i < typeWriterText.length) {
-        document.getElementById("typewriter").innerHTML += typeWriterText.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); // Adjust speed as needed
-    }
-}
-window.onload = typeWriter;
 
 let slideIndex = 0;
 showSlides();
