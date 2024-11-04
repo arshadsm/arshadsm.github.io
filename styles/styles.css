@@ -177,7 +177,7 @@ header p {
 .portfolio-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    justify-content: center; /* Center-aligns the items */
+    justify-content: space-between; /* space-between aligns the items */
     gap: 15px; /* Adds space between items */
 }
 
