@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -26,94 +24,93 @@
     <p>Welcome to my Data Engineering portfolio</p>
   </header>
 
-  <section class="intro">
-    <p>"Raw data isn’t exciting — but I love turning it into something that is!"</p>
-  </section>
-
   <section class="services fade-in" id="services">
-  <h2>Services</h2>
-  <div class="service-item">
-    <i class="fas fa-chart-line service-icon"></i>
-    <h3>Data Analysis</h3>
-    <p>Specializing in data analysis to provide clear, actionable insights.</p>
-  </div>
-  <div class="service-item">
-    <i class="fas fa-robot service-icon"></i>
-    <h3>Machine Learning</h3>
-    <p>Building predictive models using state-of-the-art techniques.</p>
-  </div>
-  <div class="service-item">
-    <i class="fas fa-chart-pie service-icon"></i>
-    <h3>Dashboards</h3>
-    <p>Creating interactive dashboards to visualize complex data.</p>
-  </div>
+    <h2>Services</h2>
+    <div class="service-item">
+      <i class="fas fa-chart-line service-icon"></i>
+      <h3>Data Analysis</h3>
+      <p>Specializing in data analysis to provide clear, actionable insights.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-robot service-icon"></i>
+      <h3>Machine Learning</h3>
+      <p>Building predictive models using state-of-the-art techniques.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-chart-pie service-icon"></i>
+      <h3>Dashboards</h3>
+      <p>Creating interactive dashboards to visualize complex data.</p>
+    </div>
   </section>
 
- <section id="portfolio">
+  <section id="portfolio">
     <h2>Portfolio</h2>
     
-    <div class="portfolio-item">
+    <figure class="portfolio-item">
       <div class="portfolio-image">
+        <!-- Uncomment and replace src to display the image -->
         <!-- <img src="/images/project1.png" alt="Real-Time Data Processing Pipeline"> -->
       </div>
-      <div class="caption">
+      <figcaption>
         <h3>Real-Time Data Processing Pipeline</h3>
         <p>Designed a robust streaming pipeline using Kafka and Spark for processing real-time data.</p>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
     
-    <div class="portfolio-item">
+    <figure class="portfolio-item">
       <div class="portfolio-image">
-        <!--  <img src="/images/project2.png" alt="Data Lake Optimization Project"> -->
+        <!-- Uncomment and replace src to display the image -->
+        <!-- <img src="/images/project2.png" alt="Data Lake Optimization Project"> -->
       </div>
-      <div class="caption">
+      <figcaption>
         <h3>Data Lake Optimization Project</h3>
         <p>Built a scalable data lake solution to manage and optimize big data using AWS S3 and Apache Spark.</p>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
 
-    <div class="portfolio-item">
+    <figure class="portfolio-item">
       <div class="portfolio-image">
-         <!-- <img src="/images/project3.png" alt="Customer Churn Prediction"> -->
+        <!-- Uncomment and replace src to display the image -->
+        <!-- <img src="/images/project3.png" alt="Customer Churn Prediction"> -->
       </div>
-      <div class="caption">
+      <figcaption>
         <h3>Customer Churn Prediction</h3>
         <p>Developed a predictive model to analyze customer churn using machine learning techniques.</p>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
 
-    <div class="portfolio-item">
+    <figure class="portfolio-item">
       <div class="portfolio-image">
-         <!-- <img src="/images/project4.png" alt="ETL Pipeline for E-Commerce Data"> -->
+        <!-- Uncomment and replace src to display the image -->
+        <!-- <img src="/images/project4.png" alt="ETL Pipeline for E-Commerce Data"> -->
       </div>
-      <div class="caption">
+      <figcaption>
         <h3>ETL Pipeline for E-Commerce Data</h3>
         <p>Built a scalable ETL pipeline using Apache Airflow to automate data extraction, transformation, and loading processes.</p>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
 
-    <div class="portfolio-item">
+    <figure class="portfolio-item">
       <div class="portfolio-image">
-         <!-- <img src="/images/project5.png" alt="Data Warehouse Design for Analytics"> -->
+        <!-- Uncomment and replace src to display the image -->
+        <!-- <img src="/images/project5.png" alt="Data Warehouse Design for Analytics"> -->
       </div>
-      <div class="caption">
+      <figcaption>
         <h3>Data Warehouse Design for Analytics</h3>
         <p>Architected and implemented a data warehouse using Redshift for advanced data analytics and reporting.</p>
-      </div>
-    </div>
-</section>
-
+      </figcaption>
+    </figure>
+  </section>
 
   <footer class="footer fade-in" id="contact">
-  <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
-  <p>
-    <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
-  </p>
+    <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
+    <p>
+      <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="{{ site.instagram }}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i> Email</a>
+    </p>
   </footer>
 
-
-<script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
