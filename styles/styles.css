@@ -312,6 +312,24 @@ header p {
     animation: float 10s ease-in-out infinite;
 }
 
+/* Animated Grid Lines */
+.grid-line {
+    stroke: #555555;
+    stroke-width: 0.1;
+    opacity: 0.3;
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+
 /* Animation Keyframes for Floating Effect */
 @keyframes float {
     0% {
