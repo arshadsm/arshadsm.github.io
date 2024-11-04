@@ -83,6 +83,59 @@ header p {
     margin-top: 0; /* Ensure no extra space above */
 }
 
+/* Skills Section */
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #111111;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-icon {
+    position: relative;
+    font-size: 3em;
+    color: #FFFFFF;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: #FFD700; /* Change icon color on hover */
+}
+
+/* Tooltip (Hover Description) */
+.skill-icon::after {
+    content: attr(data-description); /* Use data-description attribute */
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.skill-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 /* About Me Section */
 .about-me {
