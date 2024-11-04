@@ -84,7 +84,6 @@ header p {
 }
 
 /* Skills Section */
-/* Skills Section */
 .skills {
     padding: 50px 20px;
     background-color: #111111;
@@ -93,37 +92,37 @@ header p {
 }
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust columns to fit screen */
+    gap: 20px; /* Space between icons */
+    justify-items: center;
 }
 
 .skill-icon {
     position: relative;
-    font-size: 3em;
+    font-size: 2em; /* Adjust icon size as needed */
     color: #FFFFFF;
-    padding: 10px;
     transition: transform 0.3s ease;
+    padding: 10px;
 }
 
 .skill-icon:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    color: #FFD700; /* Change icon color on hover */
+    transform: scale(1.1);
+    color: #FFD700;
 }
 
 /* Tooltip (Hover Description) */
 .skill-icon::after {
-    content: attr(data-description); /* Use data-description attribute */
+    content: attr(data-description);
     position: absolute;
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #222222;
     color: #FFFFFF;
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 0.7em; /* Reduced font size */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
