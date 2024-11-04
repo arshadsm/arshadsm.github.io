@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 /* Header Section */
 header {
-    /** display: flex; **/
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -109,50 +109,50 @@ header p {
 
 /* Portfolio Section */
 #portfolio {
-  padding: 60px 20px;
-  background-color: #000000;
-  color: #FFFFFF;
+    padding: 60px 20px;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 #portfolio h2 {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 20px;
-  justify-content: center;
-  gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .portfolio-item {
-  width: calc(100% / 3 - 20px);
-  max-width: 300px; /* Set max width for better responsiveness */
-  margin-bottom: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #111111;
-  color: #FFFFFF;
-  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(100% / 3 - 20px);
+    max-width: 300px; /* Set max width for better responsiveness */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #111111;
+    color: #FFFFFF;
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
 .portfolio-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3);
 }
 
 .caption {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .caption:hover {
