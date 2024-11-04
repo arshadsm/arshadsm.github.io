@@ -1,7 +1,7 @@
 title: Mahammad Arshad Ayub Shaik
 email: mahammadarshadas@gmail.com
 profile_picture: /images/arshad.jpg
-description: "A comprehensive personal website highlighting my data science projects, professional expertise, and technical skills, showcasing real-world problem-solving and innovation."
+description: "Welcome to my data engineering portfolio. Here, I showcase my advanced data engineering projects, skills, and insights on building robust, scalable data solutions."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arshadsm.github.io" # the base hostname & protocol for your site
 linkedin: https://www.linkedin.com/in/arshad-ayub01/
@@ -21,9 +21,16 @@ plugins:
 
 # Custom settings
 projects:
-  - title: MovieLens Recommendation System
-    description: "Recommends a similar movie that might interest the customer based on the similarity index of movies the user has just watched."
-    link: /notebooks/MovieLens_Recommendation_System.html
+  - title: "Real-Time Data Processing Pipeline"
+    description: "Designed a robust streaming pipeline using Kafka and Spark for processing real-time data."
+    technologies: "Kafka, Spark, Python, AWS"
+    github_link: "https://github.com/yourusername/real-time-data-pipeline"
+  
+  - title: "Data Lake Optimization Project"
+    description: "Built a scalable data lake solution to manage and optimize big data."
+    technologies: "AWS S3, Delta Lake, Apache Spark"
+    github_link: "https://github.com/yourusername/data-lake-optimization"
+
 
 skills:
   - "Databases & Languages: **Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata**"
