@@ -59,9 +59,11 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
+
 /* Header Section */
 header {
     display: flex;
+    flex-direction: column; /* Arrange items vertically */
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -72,14 +74,15 @@ header {
 
 header h1 {
     font-size: 4em;
-    margin-bottom: 0;
+    margin-bottom: 10px; /* Adjusted spacing for separation */
 }
 
 header p {
     font-size: 1.6em;
     color: #CCCCCC;
-    margin-top: 10px;
+    margin-top: 0; /* Ensure no extra space above */
 }
+
 
 /* About Me Section */
 .about-me {
