@@ -1,37 +1,33 @@
-// Smooth Scrolling with Offset for Fixed Header
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+// Smooth Scrolling with Offset for Fixed Header using Event Delegation
+document.addEventListener('click', function(e) {
+    if (e.target.matches('a[href^="#"]')) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(e.target.getAttribute('href'));
         const offset = document.querySelector('nav').offsetHeight;
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = target.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
-
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        
         window.scrollTo({
-            top: offsetPosition,
+            top: targetPosition,
             behavior: 'smooth'
         });
-    });
+    }
 });
 
-// Typewriter effect for header
+// Typewriter Effect with requestAnimationFrame for smoother performance
 const typeWriterText = "Data Engineering Portfolio";
 let i = 0;
 
 function typeWriter() {
     if (i < typeWriterText.length) {
-        document.getElementById("typewriter").innerHTML += typeWriterText.charAt(i);
+        document.getElementById("typewriter").textContent += typeWriterText.charAt(i);
         i++;
-        setTimeout(typeWriter, 100); // Adjust speed as needed
+        requestAnimationFrame(typeWriter);
     }
 }
 window.onload = typeWriter;
 
 // Fade-In Effect on Scroll
 const faders = document.querySelectorAll('.fade-in');
-
 const appearOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -100px 0px"
@@ -39,9 +35,7 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
+        if (entry.isIntersecting) {
             entry.target.classList.add('appear');
             appearOnScroll.unobserve(entry.target);
         }
@@ -52,33 +46,22 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
-
+// Slideshow with Lazy Loading Images
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let slides = document.querySelectorAll('.slide');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.style.display = 'none');
 
-function plusSlides(n) {
-    let slides = document.querySelectorAll('.slide');
-    slideIndex += n;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    } else if (slideIndex < 1) {
-        slideIndex = slides.length;
+    slideIndex = (slideIndex + 1 > slides.length) ? 1 : slideIndex + 1;
+    const currentSlide = slides[slideIndex - 1];
+    
+    if (currentSlide && currentSlide.dataset.src) {
+        currentSlide.src = currentSlide.dataset.src;
+        delete currentSlide.dataset.src;
     }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slides[slideIndex - 1].style.display = 'block';
+    
+    currentSlide.style.display = 'block';
+    setTimeout(showSlides, 5000);
 }
