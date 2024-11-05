@@ -204,6 +204,18 @@ header p {
     border-radius: 10px 10px 0 0;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Footer */
 .footer {
     background-color: #111111;
@@ -300,17 +312,24 @@ header p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Places it behind main content */
-    overflow: hidden;
-    opacity: 0.2; /* Low opacity to avoid distraction */
+    z-index: -1;
+    opacity: 0.1; /* Lower opacity */
+    pointer-events: none; /* Ensures no interference with content */
 }
 
-/* Particle Animation */
 .particle {
-    fill: #FFD700; /* Customize color */
-    opacity: 0.6;
-    animation: float 10s ease-in-out infinite;
+    fill: #FFD700;
+    opacity: 0.4;
+    animation: float 12s ease-in-out infinite;
+    transform-origin: center;
 }
+
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+
 
 /* Animated Grid Lines */
 .grid-line {
@@ -330,15 +349,12 @@ header p {
 }
 
 
-/* Animation Keyframes for Floating Effect */
-@keyframes float {
-    0% {
-        transform: translateY(0px) translateX(0px);
-    }
-    50% {
-        transform: translateY(-10px) translateX(10px);
-    }
-    100% {
-        transform: translateY(0px) translateX(0px);
-    }
+#typewriter::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
