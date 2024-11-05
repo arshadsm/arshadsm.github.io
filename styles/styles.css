@@ -19,6 +19,7 @@ h1, h2, h3 {
 p {
     margin-bottom: 20px;
     color: #FFFFFF;
+    line-height: 1.8; /* Improved readability */
 }
 
 /* Navigation Bar */
@@ -56,9 +57,9 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #555555;
-    color: #FFD700;
+    color: #00BFFF; /* New accent color on hover */
+    text-decoration: underline;
 }
-
 
 /* Header Section */
 header {
@@ -67,7 +68,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000000;
+    background: linear-gradient(180deg, #000000, #1c1c1c); /* Added gradient */
     color: #FFFFFF;
     text-align: center;
 }
@@ -89,6 +90,7 @@ header p {
     background-color: #111111;
     text-align: center;
     color: #FFFFFF;
+    border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
 }
 
 .skills-container {
@@ -135,7 +137,6 @@ header p {
     visibility: visible;
 }
 
-
 /* About Me Section */
 .about-me {
     display: flex;
@@ -167,6 +168,7 @@ header p {
     padding: 60px 20px;
     background-color: #000000;
     color: #FFFFFF;
+    border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
 }
 
 #portfolio h2 {
@@ -191,17 +193,40 @@ header p {
     color: #FFFFFF;
     box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* For overlay effect */
 }
 
 .portfolio-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 16px rgba(255, 223, 0, 0.3);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 150, 255, 0.2);
 }
 
-.portfolio-item img {
+.portfolio-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.portfolio-item:hover::before {
+    opacity: 1;
+}
+
+.portfolio-item figcaption {
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover figcaption {
+    transform: translateY(-10px);
 }
 
 .fade-in {
@@ -215,7 +240,6 @@ header p {
     transform: translateY(0);
 }
 
-
 /* Footer */
 .footer {
     background-color: #111111;
@@ -227,10 +251,14 @@ header p {
 .footer a {
     color: #FFFFFF;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer a:hover {
     color: #FFD700;
+    transform: scale(1.1);
 }
 
 .footer i {
@@ -277,7 +305,7 @@ header p {
 .services-heading {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin: 30px 0 20px; /* Increased margin for better spacing */
     font-family: 'Dancing Script', cursive;
     color: #FFFFFF;
 }
@@ -302,8 +330,11 @@ header p {
         width: calc(100% - 20px); /* Stacks items vertically */
         max-width: 100%;
     }
+    .skills-container, .portfolio-container, .services {
+        grid-template-columns: 1fr; /* Stacks items vertically */
+        gap: 10px; /* Smaller gap on mobile */
+    }
 }
-
 
 /* Background Animation Container */
 .background-animation {
@@ -330,7 +361,6 @@ header p {
     100% { transform: translateY(0px) translateX(0px); }
 }
 
-
 /* Animated Grid Lines */
 .grid-line {
     stroke: #555555;
@@ -348,7 +378,7 @@ header p {
     }
 }
 
-
+/* Typewriter Blinking Cursor */
 #typewriter::after {
     content: '|';
     animation: blink 1s infinite;
