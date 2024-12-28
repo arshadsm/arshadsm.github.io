@@ -15,17 +15,21 @@ document.addEventListener('click', function(e) {
 });
 
 // Typewriter Effect with requestAnimationFrame for smoother performance
-// const typeWriterText = "Data Engineering Portfolio";
+let typeWriterText = document.getElementById("typewriter").textContent.trim(); // Get the existing text
 let i = 0;
 
 function typeWriter() {
     if (i < typeWriterText.length) {
-        document.getElementById("typewriter").textContent += typeWriterText.charAt(i);
+        document.getElementById("typewriter").textContent = typeWriterText.slice(0, i + 1);
         i++;
         requestAnimationFrame(typeWriter);
     }
 }
-window.onload = typeWriter;
+
+window.onload = () => {
+    document.getElementById("typewriter").textContent = ""; // Clear the text for animation
+    typeWriter();
+};
 
 // Fade-In Effect on Scroll
 const faders = document.querySelectorAll('.fade-in');
