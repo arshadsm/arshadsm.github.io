@@ -1,7 +1,8 @@
 /* Typography */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    background-color: #121212;
+    color: #F4F4F9;
     background: linear-gradient(180deg, #000000, #1c1c1c);
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
-    color: #FFFFFF;
+    color: #00BFFF;
     margin-bottom: 10px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -47,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF;
+    color: #00BFFF;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -56,9 +57,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555555;
-    color: #00BFFF; /* New accent color on hover */
-    text-decoration: underline;
+    color: #1ABC9C;
+    background-color: #232323;
+    padding: 2px 4px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 /* Header Section */
@@ -87,7 +90,7 @@ header p {
 /* Skills Section */
 .skills {
     padding: 50px 20px;
-    background-color: #111111;
+    background-color: #1C1C1C;
     text-align: center;
     color: #FFFFFF;
     border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
@@ -189,7 +192,7 @@ header p {
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #111111;
+    background-color: #232323;
     color: #FFFFFF;
     box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
