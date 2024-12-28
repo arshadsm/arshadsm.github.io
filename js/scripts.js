@@ -15,7 +15,7 @@ document.addEventListener('click', function(e) {
 });
 
 // Typewriter Effect with requestAnimationFrame for smoother performance
-const typeWriterText = "Data Engineering Portfolio";
+// const typeWriterText = "Data Engineering Portfolio";
 let i = 0;
 
 function typeWriter() {
