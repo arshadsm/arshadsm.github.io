@@ -3,13 +3,14 @@ document.addEventListener('click', function(e) {
     if (e.target.matches('a[href^="#"]')) {
         e.preventDefault();
         const target = document.querySelector(e.target.getAttribute('href'));
-        const offset = document.querySelector('nav').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
+        if (target) {
+            const offset = document.querySelector('nav').offsetHeight + 10; // Add extra 10px for padding
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
     }
 });
 
@@ -33,11 +34,11 @@ const appearOptions = {
     rootMargin: "0px 0px -100px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
+            observer.unobserve(entry.target);
         }
     });
 }, appearOptions);
@@ -56,26 +57,28 @@ function showSlides() {
 
     slideIndex = (slideIndex + 1 > slides.length) ? 1 : slideIndex + 1;
     const currentSlide = slides[slideIndex - 1];
-    
+
     if (currentSlide && currentSlide.dataset.src) {
         currentSlide.src = currentSlide.dataset.src;
         delete currentSlide.dataset.src;
     }
-    
+
     currentSlide.style.display = 'block';
-    setTimeout(showSlides, 5000);
+    setTimeout(showSlides, 5000); // Change slide every 5 seconds
 }
 
+// Additional Event Listener for Smooth Scrolling (if required)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        const offset = document.querySelector('nav').offsetHeight + 10; // Add extra 10px for padding
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
-        
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
+        if (target) {
+            const offset = document.querySelector('nav').offsetHeight + 10; // Add extra 10px for padding
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
     });
 });
