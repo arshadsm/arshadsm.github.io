@@ -1,43 +1,11 @@
-title: Mahammad Arshad Ayub Shaik
-email: mahammadarshadas@gmail.com
-profile_picture: /images/arshad.jpg
-description: "Welcome to my data engineering portfolio. Here, I showcase my advanced data engineering projects, skills, and insights on building robust, scalable data solutions."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arshadsm.github.io" # the base hostname & protocol for your site
-linkedin: https://www.linkedin.com/in/arshad-ayub01/
-instagram: https://www.instagram.com/arshaditseems/
-
-# Remote theme settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+title: "Arshad Ayub Portfolio"
+description: "Showcasing expertise in data pipelines, machine learning, and cloud technologies."
+baseurl: "" 
+url: "https://www.arshadayub.com"
+theme: minima
 plugins:
-  - jekyll-remote-theme # add this if you don't have it
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Custom settings
-projects:
-  - title: "Real-Time Data Processing Pipeline"
-    description: "Designed a robust streaming pipeline using Kafka and Spark for processing real-time data."
-    technologies: "Kafka, Spark, Python, AWS"
-    github_link: "https://github.com/yourusername/real-time-data-pipeline"
-  
-  - title: "Data Lake Optimization Project"
-    description: "Built a scalable data lake solution to manage and optimize big data."
-    technologies: "AWS S3, Delta Lake, Apache Spark"
-    github_link: "https://github.com/yourusername/data-lake-optimization"
-
-
-skills:
-  - "Databases & Languages: **Python, R, SAS, SQL, Oracle, Amazon Redshift, PostgreSQL, MS SQL Server, Teradata**"
-  - "Statistical Methods: **ANOVA, Time Series, Hypothesis Testing, Bayes Law, Principal Component Analysis (PCA), Dimensionality Reduction, Cross-Validation, Auto-correlation, Confidence Intervals**"
-  - "Machine Learning: **Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, Sentiment Analysis, K-Means Clustering, KNN, Ensemble Method, Deep Learning, Natural Language Processing (NLP)**"
-  - "Hadoop Ecosystem: **Hadoop 2.x, Spark 2.x, MapReduce, Hive, HDFS, Sqoop, Flume**"
-  - "Data Visualization: **Tableau, QlikView, PowerBI, Matplotlib, Seaborn, ggplot2**"
-  - "Operating Systems: **Windows, UNIX/UNIX Shell Scripting, Linux**"
-  - "Cloud Computing and Version Control Systems: **MS Azure, AWS - RedShift, EC2, EMR, S3, Git**"
-  - "Soft Skills: **Leadership skills, Interpersonal, Oral and Written communication**"
+markdown: kramdown
+permalink: pretty
