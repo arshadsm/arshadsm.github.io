@@ -1,9 +1,21 @@
-/* Typography */
+/* Typography
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
     color: #F4F4F4;
     background: linear-gradient(180deg, #0b0b0b, #1c1c1c);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}*/
+body {
+    background-image: url('images/double-bubble-dark.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image fixed during scroll */
+    background-position: center; /* Centers the image */
+    color: #F4F4F4; /* Ensure text color contrasts with the background */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
