@@ -11,7 +11,7 @@ body {
 */
 
 body {
-    background-image: url('images/double-bubble-dark.jpg'); 
+    background-image: url('../images/double-bubble-dark.jpg'); 
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps the image fixed during scroll */
