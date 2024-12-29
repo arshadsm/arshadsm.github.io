@@ -86,3 +86,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+/* JavaScript to Toggle Scroll Class */
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        nav.classList.add("scroll");
+    } else {
+        nav.classList.remove("scroll");
+    }
+});
