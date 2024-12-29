@@ -138,3 +138,68 @@ header p {
     color: #FFD700;
     transform: scale(1.1);
 }
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(100% - 20px); /* Stacks items vertically */
+        max-width: 100%;
+    }
+    .skills-container, .portfolio-container, .services {
+        grid-template-columns: 1fr; /* Stacks items vertically */
+        gap: 10px; /* Smaller gap on mobile */
+    }
+}
+
+/* Background Animation Container */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.1; /* Lower opacity */
+    pointer-events: none; /* Ensures no interference with content */
+}
+
+.particle {
+    fill: #FFD700;
+    opacity: 0.4;
+    animation: float 12s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Animated Grid Lines */
+.grid-line {
+    stroke: #555555;
+    stroke-width: 0.1;
+    opacity: 0.3;
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+/* Typewriter Blinking Cursor */
+#typewriter::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
