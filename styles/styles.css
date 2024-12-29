@@ -90,9 +90,11 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(180deg, #121212, #1A1A1A); 
+    background: transparent; 
     color: #F4F4F4;
     text-align: center;
+    z-index: 1; /* Keep it above the background */
+    position: relative; 
 }
 
 header h1 {
