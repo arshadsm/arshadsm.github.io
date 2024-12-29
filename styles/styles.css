@@ -1,8 +1,8 @@
 /* Typography */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: #F4F4F9;
+    background-color: #1A1A2E;
+    color: #EAEAEA;
     background: linear-gradient(180deg, #0b0b0b, #1c1c1c);
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive;
-    color: #00BFFF;
+    color: #EAEAEA;
     margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -19,13 +19,13 @@ h1, h2, h3 {
 
 p {
     margin-bottom: 20px;
-    color: #FFFFFF;
-    line-height: 1.8; /* Improved readability */
+    color: #EAEAEA;
+    line-height: 1.8; 
 }
 
 /* Navigation Bar */
 nav {
-    background: #111111;
+    background: #1A1A2E;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3);
     position: fixed;
     width: 100%;
@@ -48,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00BFFF;
+    color: #EAEAEA;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
@@ -57,8 +57,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1ABC9C;
-    background-color: #232323;
+    color: #EAEAEA;
+    background-color: #1A1A2E;
     padding: 2px 4px;
     border-radius: 5px;
     text-decoration: underline;
@@ -72,7 +72,7 @@ header {
     justify-content: center;
     height: 100vh;
     background: linear-gradient(180deg, #000000, #1c1c1c); /* Added gradient */
-    color: #FFFFFF;
+    color: #EAEAEA;
     text-align: center;
 }
 
@@ -83,16 +83,16 @@ header h1 {
 
 header p {
     font-size: 1.6em;
-    color: #CCCCCC;
+    color: #EAEAEA;
     margin-top: 0; /* Ensure no extra space above */
 }
 
 /* Skills Section */
 .skills {
     padding: 50px 20px;
-    background-color: #1C1C1C;
+    background-color: #1A1A2E;
     text-align: center;
-    color: #FFFFFF;
+    color: #EAEAEA;
     border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
 }
 
@@ -106,14 +106,14 @@ header p {
 .skill-icon {
     position: relative;
     font-size: 2em; /* Adjust icon size as needed */
-    color: #FFFFFF;
+    color: #EAEAEA;
     transition: transform 0.3s ease;
     padding: 10px;
 }
 
 .skill-icon:hover {
     transform: scale(1.1);
-    color: #FFD700;
+    color: #EAEAEA;
 }
 
 /* Tooltip (Hover Description) */
@@ -123,11 +123,11 @@ header p {
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #222222;
-    color: #FFFFFF;
+    background-color: #1A1A2E;
+    color: #EAEAEA;
     padding: 5px 8px;
     border-radius: 5px;
-    font-size: 0.7em; /* Reduced font size */
+    font-size: 0.7em; 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
@@ -143,11 +143,11 @@ header p {
 /* About Me Section */
 .about-me {
     display: flex;
-    flex-wrap: wrap; /* Improved layout on smaller screens */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    background-color: #111111;
+    background-color: #1A1A2E;
 }
 
 .about-me-text {
@@ -155,7 +155,7 @@ header p {
     padding: 20px;
     background-color: #222222;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #EAEAEA;
     margin: 10px;
 }
 
@@ -169,8 +169,8 @@ header p {
 /* Portfolio Section */
 #portfolio {
     padding: 60px 20px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #1A1A2E;
+    color: #EAEAEA;
     border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
 }
 
@@ -224,7 +224,7 @@ header p {
 .portfolio-item figcaption {
     position: relative;
     z-index: 2;
-    color: #FFFFFF;
+    color: #EAEAEA;
     transition: transform 0.3s ease;
 }
 
@@ -245,10 +245,10 @@ header p {
 
 /* Footer */
 .footer {
-    background-color: #111111;
+    background-color: #1A1A2E;
     padding: 40px 0;
     text-align: center;
-    color: #FFFFFF;
+    color: #EAEAEA;
 }
 
 .footer a {
@@ -276,7 +276,7 @@ header p {
 /* Intro Section */
 .intro {
     padding: 50px 20px;
-    background-color: #000000;
+    background-color: #1A1A2E;
     text-align: center;
 }
 
@@ -290,7 +290,7 @@ header p {
 /* Contact Me */
 .cta-button {
     display: inline-block;
-    background-color: #00BFFF;
+    background-color: #1A1A2E;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
