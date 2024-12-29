@@ -53,7 +53,7 @@ nav ul li a {
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -62,6 +62,11 @@ nav ul li a:hover {
     padding: 2px 4px;
     border-radius: 5px;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #00BFFF; /* Same color as the default state */
+    text-decoration: none; /* Ensure no underline after clicking */
 }
 
 /* Header Section */
