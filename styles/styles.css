@@ -385,3 +385,10 @@ header p {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+.skills, .about-me, #portfolio, .footer {
+    background-color: transparent; 
+    color: #F4F4F4; 
+    border-bottom: none; 
+}
+
