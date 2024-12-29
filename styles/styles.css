@@ -93,7 +93,7 @@ header {
     background: transparent; 
     color: #F4F4F4;
     text-align: center;
-    z-index: 1; /* Keep it above the background */
+    z-index: 1; 
     position: relative; 
 }
 
