@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
+:root {
+    --primary-color: #00BFFF;
+    --secondary-color: #FFD700;
+    --background-color: #1A1A1A;
+    --text-color: #F4F4F4;
+    --font-family-main: 'Roboto', sans-serif;
+}
+
 /* Typography */
 body {
+    color: var(--text-color);
+    font-family: var(--font-family-main);
     background-image: url('../images/wavy-dark-gray-texture.jpg'); 
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat; /* Prevents tiling */
     background-attachment: fixed; /* Keeps the image fixed during scroll */
     background-position: top center; /* Centers the image */
-    color: #F4F4F4; /* Ensure text color contrasts with the background */
-    font-family: 'Roboto', sans-serif;
+    /*color: #F4F4F4; Ensure text color contrasts with the background */
+    /*font-family: 'Roboto', sans-serif;*/
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -409,9 +419,4 @@ header p {
     background-color: transparent; 
     color: #ffffff; 
     border-bottom: none; 
-}
-
-/* Items */
-.project-title, .skills-icons i {
-    color: #ffffff; /* White for items */
 }
