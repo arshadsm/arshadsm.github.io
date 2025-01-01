@@ -263,7 +263,7 @@ header p {
 .portfolio-item figcaption {
     position: relative;
     z-index: 2;
-    color: #EAEAEA;
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
 
