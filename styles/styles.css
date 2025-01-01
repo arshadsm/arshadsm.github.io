@@ -132,14 +132,14 @@ header p {
 .skill-icon {
     position: relative;
     font-size: 2em; /* Adjust icon size as needed */
-    color: #EAEAEA;
+    color: #00BFFF; /* Updated to match contact section items */
     transition: transform 0.3s ease;
     padding: 10px;
 }
 
 .skill-icon:hover {
     transform: scale(1.1);
-    color: #EAEAEA;
+    color: #FFD700; /* Updated to match contact section hover effect */
 }
 
 /* Tooltip (Hover Description) */
