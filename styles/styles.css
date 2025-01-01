@@ -12,13 +12,11 @@
 body {
     color: var(--text-color);
     font-family: var(--font-family-main);
-    background-image: url('../images/wavy-dark-gray-texture.jpg'); 
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps the image fixed during scroll */
-    background-position: top center; /* Centers the image */
-    /*color: #F4F4F4; Ensure text color contrasts with the background */
-    /*font-family: 'Roboto', sans-serif;*/
+    background-image: url('../images/wavy-dark-gray-texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -35,24 +33,24 @@ h1, h2, h3 {
 p {
     margin-bottom: 20px;
     color: #CCCCCC;
-    line-height: 1.8; 
+    line-height: 1.8;
 }
 
 /* Navigation Bar */
 nav {
-    background: #333333; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adjusted shadow for better contrast */
+    background: #333333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
-    transition: background 0.3s ease; /* For smooth background transition */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
 }
 
 nav.scroll {
-    background: #2a2a2a; /* Solid background when scrolling */
+    background: #2a2a2a;
     transition: background 0.3s ease-in-out;
 }
 
@@ -62,7 +60,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Improved responsiveness */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -76,43 +74,43 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     transition: color 0.3s ease, background-color 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li a:hover {
     color: #00BFFF;
-    background-color: #444444; /* Light hover background */
+    background-color: #444444;
     text-decoration: underline;
     border-radius: 5px;
 }
 
 nav ul li a.active {
-    color: #FFD700; /* Highlight active link */
-    border-bottom: 2px solid #FFD700; /* Bottom border for active state */
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
 }
 
 a:visited {
-    color: #00BFFF; /* Same color as the default state */
-    text-decoration: none; /* Ensure no underline after clicking */
+    color: #00BFFF;
+    text-decoration: none;
 }
 
 /* Header Section */
 header {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: transparent; 
+    background: transparent;
     color: #F4F4F4;
     text-align: center;
-    z-index: 1; 
-    position: relative; 
+    z-index: 1;
+    position: relative;
 }
 
 header h1 {
     font-size: 4em;
-    margin-bottom: 10px; /* Adjusted spacing for separation */
+    margin-bottom: 10px;
     max-width: 90%;
     word-wrap: break-word;
 }
@@ -120,7 +118,7 @@ header h1 {
 header p {
     font-size: 1.6em;
     color: #EAEAEA;
-    margin-top: 0; /* Ensure no extra space above */
+    margin-top: 0;
 }
 
 /* Skills Section */
@@ -129,30 +127,29 @@ header p {
     background-color: #1A1A1A;
     text-align: center;
     color: #F4F4F4;
-    border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
+    border-bottom: 2px solid #00BFFF;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust columns to fit screen */
-    gap: 20px; /* Space between icons */
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 20px;
     justify-items: center;
 }
 
 .skill-icon {
     position: relative;
-    font-size: 2em; /* Adjust icon size as needed */
-    color: #ffffff; /* Updated to match contact section items */
+    font-size: 2em;
+    color: #ffffff;
     transition: transform 0.3s ease;
     padding: 10px;
 }
 
 .skill-icon:hover {
     transform: scale(1.1);
-    color: #FFD700; /* Updated to match contact section hover effect */
+    color: #FFD700;
 }
 
-/* Tooltip (Hover Description) */
 .skill-icon::after {
     content: attr(data-description);
     position: absolute;
@@ -163,14 +160,14 @@ header p {
     color: #F4F4F4;
     padding: 5px 8px;
     border-radius: 5px;
-    font-size: 0.7em; 
+    font-size: 0.7em;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
     white-space: nowrap;
     z-index: 10;
-    max-width: 150px; /* Add a maximum width */
-    text-overflow: ellipsis; /* Ensure long text doesn't overflow */
+    max-width: 150px;
+    text-overflow: ellipsis;
 }
 
 .skill-icon:hover::after {
@@ -181,12 +178,12 @@ header p {
 /* About Me Section */
 .about-me {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
     background-color: #1A1A2E;
-    gap: 20px; /* Add spacing between items */
+    gap: 20px;
 }
 
 .about-me-text {
@@ -210,7 +207,7 @@ header p {
     padding: 60px 20px;
     background-color: #1A1A1A;
     color: #F4F4F4;
-    border-bottom: 2px solid #00BFFF; /* Accent border to separate sections */
+    border-bottom: 2px solid #00BFFF;
 }
 
 #portfolio h2 {
@@ -220,14 +217,14 @@ header p {
 
 .portfolio-container {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    justify-content: center; /* Center-aligns the items */
-    gap: 15px; /* Adds space between items */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .portfolio-item {
-    flex: 1 1 calc(33.33% - 30px); /* Three items per row */
-    max-width: 300px; /* Sets max width for responsiveness */
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: 300px;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -235,7 +232,7 @@ header p {
     color: #F4F4F4;
     box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* For overlay effect */
+    position: relative;
 }
 
 .portfolio-item:hover {
@@ -311,7 +308,6 @@ header p {
     color: #FFD700;
 }
 
-
 /* Intro Section */
 .intro {
     padding: 50px 20px;
@@ -335,7 +331,7 @@ header p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    font-size: 1em; /* Adjust for consistency */
+    font-size: 1em;
 }
 
 .cta-button:hover {
@@ -345,20 +341,20 @@ header p {
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
     .portfolio-item {
-        width: calc(100% - 20px); /* Stacks items vertically */
+        width: calc(100% - 20px);
         max-width: 100%;
-        flex: 1 1 calc(100% - 20px); /* Single item per row */
+        flex: 1 1 calc(100% - 20px);
     }
     .skills-container, .portfolio-container, .services {
-        grid-template-columns: 1fr; /* Stacks items vertically */
-        gap: 10px; /* Smaller gap on mobile */
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
     .footer a {
         display: block;
         margin: 10px 0;
     }
     .about-me img {
-        max-width: 90%; /* Ensure the image doesn't overflow */
+        max-width: 90%;
     }
 }
 
@@ -370,8 +366,8 @@ header p {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    opacity: 0.1; /* Lower opacity */
-    pointer-events: none; /* Ensures no interference with content */
+    opacity: 0.1;
+    pointer-events: none;
 }
 
 .particle {
@@ -416,7 +412,7 @@ header p {
 }
 
 .skills, .about-me, #portfolio, .footer {
-    background-color: transparent; 
-    color: #ffffff; 
-    border-bottom: none; 
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: none;
 }
