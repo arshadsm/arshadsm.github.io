@@ -142,7 +142,7 @@ header p {
 .skill-icon {
     position: relative;
     font-size: 2em; /* Adjust icon size as needed */
-    color: #00BFFF; /* Updated to match contact section items */
+    color: #ffffff; /* Updated to match contact section items */
     transition: transform 0.3s ease;
     padding: 10px;
 }
@@ -291,7 +291,7 @@ header p {
 }
 
 .footer a {
-    color: #00BFFF;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.2em;
