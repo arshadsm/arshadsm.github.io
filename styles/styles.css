@@ -16,7 +16,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
-    color: #FFFAF0;
+    color: #00aaff;
     margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -407,7 +407,7 @@ header p {
 
 .skills, .about-me, #portfolio, .footer {
     background-color: transparent; 
-    color: #F4F4F4; 
+    color: #ffffff; 
     border-bottom: none; 
 }
 
