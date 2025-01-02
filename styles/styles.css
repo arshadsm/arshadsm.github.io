@@ -183,7 +183,7 @@ header p {
 #skills h2::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 60px;
     height: 3px;
     background-color: var(--primary-color);
     margin: 10px auto 30px;
@@ -350,12 +350,12 @@ header p {
     color: #FFD700;
 }
 
-#footer h2 {
+#contact h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-#footer h2::after {
+#contact h2::after {
     content: '';
     display: block;
     width: 80px;
