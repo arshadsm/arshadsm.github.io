@@ -235,6 +235,20 @@ header p {
     position: relative;
 }
 
+/* Project Titles */
+.portfolio-item h3 {
+    color: #FFFFFF; /* White color for project titles */
+    font-size: 1.2em; /* Adjust the size if needed */
+    margin-bottom: 10px; /* Add spacing below the title */
+    text-decoration: none; /* Remove any default underline */
+    font-weight: bold; /* Emphasize the titles */
+    transition: color 0.3s ease;
+}
+
+.portfolio-item h3:hover {
+    color: var(--primary-color); /* Optional: Highlight color on hover */
+}
+
 .portfolio-item:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 12px 20px rgba(0, 150, 255, 0.2);
