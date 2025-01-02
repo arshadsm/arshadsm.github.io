@@ -212,7 +212,16 @@ header p {
 
 #portfolio h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+#portfolio h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 10px auto 30px;
 }
 
 .portfolio-container {
@@ -230,7 +239,7 @@ header p {
     overflow: hidden;
     background-color: #232323;
     color: #F4F4F4;
-    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
@@ -240,7 +249,8 @@ header p {
 .portfolio-item h3 a {
     color: #FFFFFF !important; /* Force white color for project titles */
     text-decoration: none; /* Remove underline */
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.4;
     font-weight: bold;
     transition: color 0.3s ease; /* Smooth hover effect */
 }
@@ -255,6 +265,7 @@ header p {
 .portfolio-item:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 12px 20px rgba(0, 150, 255, 0.2);
+    background-color: #1B1B1B;
 }
 
 .portfolio-item::before {
