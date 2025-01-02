@@ -472,3 +472,18 @@ header p {
     color: #ffffff;
     border-bottom: none;
 }
+
+/* Add spacing between sections */
+section {
+    margin-bottom: 100vh; /* Ensures sufficient space between sections */
+    scroll-margin-top: 60px; /* Adjusts for navbar height during navigation */
+}
+
+/* Ensure each section takes up full viewport height */
+section {
+    min-height: 100vh; /* Each section occupies the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
