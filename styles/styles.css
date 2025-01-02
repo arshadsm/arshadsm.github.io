@@ -236,18 +236,21 @@ header p {
 }
 
 /* Project Titles */
-.portfolio-item h3 {
-    color: #FFFFFF !important; /* White color for project titles */
-    font-size: 1.2em; /* Adjust the size if needed */
-    margin-bottom: 10px; /* Add spacing below the title */
-    text-decoration: none; /* Remove any default underline */
-    font-weight: bold; /* Emphasize the titles */
-    transition: color 0.3s ease;
+/* Ensure Specificity for Project Titles with Links */
+.portfolio-item h3 a {
+    color: #FFFFFF !important; /* Force white color for project titles */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-.portfolio-item h3:hover {
-    color: var(--primary-color); /* Optional: Highlight color on hover */
+/* Hover Effect for Links */
+.portfolio-item h3 a:hover {
+    color: var(--primary-color); /* Matches the primary color */
+    text-decoration: underline; /* Optional underline for hover */
 }
+
 
 .portfolio-item:hover {
     transform: translateY(-5px) scale(1.05);
