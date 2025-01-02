@@ -12,7 +12,7 @@
 body {
     color: var(--text-color);
     font-family: var(--font-family-main);
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/black-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
