@@ -237,7 +237,7 @@ header p {
 
 /* Project Titles */
 .portfolio-item h3 {
-    color: #FFFFFF; /* White color for project titles */
+    color: #FFFFFF !important; /* White color for project titles */
     font-size: 1.2em; /* Adjust the size if needed */
     margin-bottom: 10px; /* Add spacing below the title */
     text-decoration: none; /* Remove any default underline */
